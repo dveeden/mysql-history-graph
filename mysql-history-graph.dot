@@ -1,25 +1,84 @@
 digraph mysql_history_graph {
+	/* Standards:
+	   Non-GA: 		dotted
+	   Abandoned: 		dotted 
+	   Oracle MySQL: 	red
+	   MySQL Cluster: 	red3
+	   MariaDB: 		blue
+	   Drizzle: 		blue4
+	   Percona Server: 	orange
+	*/
+
 	/* MySQL/Sun/Oracle MySQL GA */
+	"MySQL 3.23" [color="red"];
+	"MySQL 4.0" [color="red"];
+	"MySQL 4.1" [color="red"];
+	"MySQL 5.0" [color="red"];
+	"MySQL 5.1" [color="red"];
+	"MySQL 5.5" [color="red"];
 	"MySQL 3.23" -> "MySQL 4.0";
 	"MySQL 4.0" -> "MySQL 4.1";
 	"MySQL 4.1" -> "MySQL 5.0";
 	"MySQL 5.0" -> "MySQL 5.1";
 	"MySQL 5.1" -> "MySQL 5.5";
-	"MySQL 5.5" -> "MySQL 5.6";
 
 	/* MySQL/Sun/Oracle non-GA */	
+	"MySQL 5.4" [color="red",style="dotted"];
+	"MySQL 5.6" [color="red",style="dashed"];
+	"MySQL 6.0" [color="red",style="dotted"];
+	"MySQL 5.1" -> "MySQL 5.4" [style="dashed"];
+	"MySQL 5.5" -> "MySQL 5.6" [style="dashed"];
 	"MySQL 5.1" -> "MySQL 6.0" [style="dashed"];
-	"MySQL 6.0" [color="grey",style="dashed"];
+
+	/* MySQL Cluster (NDB) */
+	"MySQL Cluster 6.2" [color="red3"]
+	"MySQL Cluster 6.3" [color="red3"]
+	"MySQL Cluster 7.0" [color="red3"]
+	"MySQL Cluster 7.1" [color="red3"]
+	"MySQL Cluster 7.2" [color="red3"]
+	"MySQL Cluster 7.3"  [color="red3",style="dashed"];
+	"MySQL 5.1" -> "MySQL Cluster 6.2";
+	"MySQL 5.1" -> "MySQL Cluster 6.3";
+	"MySQL Cluster 6.2" -> "MySQL Cluster 6.3";
+	"MySQL 5.1" -> "MySQL Cluster 7.0";
+	"MySQL Cluster 6.3" -> "MySQL Cluster 7.0";
+	"MySQL 5.1" -> "MySQL Cluster 7.1";
+	"MySQL Cluster 7.0" -> "MySQL Cluster 7.1";
+	"MySQL 5.5" -> "MySQL Cluster 7.2";
+	"MySQL Cluster 7.1" -> "MySQL Cluster 7.2";
+	"MySQL 5.5" -> "MySQL Cluster 7.3" [style="dashed"];
+	"MySQL Cluster 7.2" -> "MySQL Cluster 7.3" [style="dashed"];
 
 	/* MariaDB */
+	"MariaDB 5.1" [color="blue"];
+	"MariaDB 5.2" [color="blue"];
+	"MariaDB 5.3" [color="blue"];
+	"MariaDB 5.5" [color="blue"];
+	"MariaDB 10.0" [color="blue", style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"MySQL 5.1" -> "MariaDB 5.2";
+	"MariaDB 5.1" -> "MariaDB 5.2";
 	"MySQL 5.1" -> "MariaDB 5.3";
+	"MariaDB 5.2" -> "MariaDB 5.3";
 	"MySQL 5.5" -> "MariaDB 5.5";
-	"MariaDB 5.5" -> "MariaDB 10.0";
+	"MariaDB 5.3" -> "MariaDB 5.5";
+	"MariaDB 5.5" -> "MariaDB 10.0" [style="dashed"];
 
 	/* Percona Server */
+	"Percona Server 5.0" [color="orange"];
+	"Percona Server 5.1" [color="orange"];
+	"Percona Server 5.5" [color="orange"];
 	"MySQL 5.0" -> "Percona Server 5.0";
 	"MySQL 5.1" -> "Percona Server 5.1";
+	"Percona Server 5.0" -> "Percona Server 5.1";
 	"MySQL 5.5" -> "Percona Server 5.5";
+	"Percona Server 5.1" -> "Percona Server 5.5";
+
+	/* Drizzle */
+	"Drizzle 7.0" [color="blue4"];
+	"Drizzle 7.1" [color="blue4"];
+	"Drizzle 7.2" [color="blue4"];
+	"MySQL 6.0" -> "Drizzle 7.0"	
+	"Drizzle 7.0" -> "Drizzle 7.1"	
+	"Drizzle 7.1" -> "Drizzle 7.2"	
 }
