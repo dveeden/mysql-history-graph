@@ -1,9 +1,14 @@
-DOCNAME="mysql-history-graph"
+SOURCES=mysql-history-graph.dot innodb-history-graph.dot
+SVGGRAPHS=$(SOURCES:.dot=.svg)
+PNGGRAPHS=$(SOURCES:.dot=.png)
 
-default: $(DOCNAME).png $(DOCNAME).svg
+all: $(SOURCES) $(SVGGRAPHS) $(PNGGRAPHS)
 
-$(DOCNAME).png:
-	dot -Tpng -o $(DOCNAME).png $(DOCNAME).dot
+clean:
+	rm -rf $(SVGGRAPHS) $(PNGGRAPHS)
 
-$(DOCNAME).svg:
-	dot -Tsvg -o $(DOCNAME).svg $(DOCNAME).dot
+%.png: %.dot
+	dot -Tpng -o $@ $<
+
+%.svg: %.dot
+	dot -Tsvg -o $@ $<
