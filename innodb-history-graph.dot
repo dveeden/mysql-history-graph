@@ -1,0 +1,12 @@
+digraph innodb_version_history {
+	"InnoDB Buildin (MySQL 5.1)" 
+	"InnoDB Plugin 1.0";	// MySQL 5.1
+	"InnoDB 1.1"; 		// MySQL 5.5
+	"InnoDB 1.2"; 		// MySQL 5.6
+	"XtraDB";		// Percona Server
+
+	"InnoDB Buildin (MySQL 5.1)" -> "InnoDB Plugin 1.0";
+	"InnoDB Plugin 1.0" -> "InnoDB 1.1";
+	"InnoDB 1.1" -> "XtraDB";
+	"InnoDB 1.1" -> "InnoDB 1.2";
+}
