@@ -1,0 +1,66 @@
+digraph mysql_bug_graph {
+/* Based on:
+   http://mysqlentomologist.blogspot.nl/2013/01/life-cycle-of-mysql-bug.html
+*/
+
+	rankdir=LR;
+	"Open";
+	"Closed";
+	"Duplicate";
+	"Analyzing" [color="grey"];
+	"Verified" [color="grey"];
+	"To be fixed later";
+	"Won't fix";
+	"Can't repeat" [color="grey"];
+	"No Feedback" [color="grey"];
+	"Need Feedback" [color="grey"];
+	"Not a Bug";
+	"Unsupported";
+	"Oracle Internal Bug System" [color="red"];
+
+	"Open" -> "Analyzing";
+	"Open" -> "Duplicate";
+	"Open" -> "Verified";
+	"Open" -> "To be fixed later";
+	"Open" -> "Can't repeat";
+	"Open" -> "Need Feedback";
+	"Open" -> "Not a Bug";
+	"Open" -> "Unsupported";
+
+	"Analyzing" -> "Open";
+	"Analyzing" -> "Duplicate";
+	"Analyzing" -> "Verified";
+	"Analyzing" -> "To be fixed later";
+	"Analyzing" -> "Can't repeat";
+	"Analyzing" -> "Need Feedback";
+	"Analyzing" -> "Not a Bug";
+	"Analyzing" -> "Unsupported";
+
+	"Verified" -> "Closed";
+	"Verified" -> "Need Feedback";
+	"Verified" -> "Can't repeat";
+	"Verified" -> "Duplicate";
+	"Verified" -> "To be fixed later";
+	"Verified" -> "Won't fix";
+	"Verified" -> "Not a Bug";
+	"Verified" -> "Oracle Internal Bug System" [style="dotted"];
+
+	"Oracle Internal Bug System" -> "Closed" [style="dotted"];
+
+	"Need Feedback" -> "No Feedback";
+	"Need Feedback" -> "Analyzing";
+	"Need Feedback" -> "Duplicate";
+	"Need Feedback" -> "Verified";
+	"Need Feedback" -> "To be fixed later";
+	"Need Feedback" -> "Can't repeat";
+	"Need Feedback" -> "Not a Bug";
+	"Need Feedback" -> "Unsupported";
+
+	"No Feedback" -> "Analyzing";
+	"No Feedback" -> "Duplicate";
+	"No Feedback" -> "Verified";
+	"No Feedback" -> "To be fixed later";
+	"No Feedback" -> "Can't repeat";
+	"No Feedback" -> "Not a Bug";
+	"No Feedback" -> "Unsupported";
+}

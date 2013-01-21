@@ -1,4 +1,4 @@
-SOURCES=mysql-history-graph.dot innodb-history-graph.dot
+SOURCES=mysql-history-graph.dot innodb-history-graph.dot mysql-bug.dot
 SVGGRAPHS=$(SOURCES:.dot=.svg)
 PNGGRAPHS=$(SOURCES:.dot=.png)
 
