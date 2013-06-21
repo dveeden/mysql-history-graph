@@ -1,3 +1,4 @@
+
 digraph mysql_history_graph {
 	/* Standards:
 	   Non-GA: 		dotted
@@ -8,6 +9,28 @@ digraph mysql_history_graph {
 	   Drizzle: 		blue4
 	   Percona Server: 	orange
 	*/
+	subgraph cluster_0 {
+		label="Legend";
+		color=black;
+		node [width=1.5, fixedsize=true, fontsize=12];
+	  	"Non-GA" [style="dotted"];
+	  	"Abbandoned" [style="dotted"];
+	  	"Oracle MySQL" [color="red"];
+	  	"MySQL Cluster" [color="red3"];
+	  	"MariaDB" [color="blue"];
+	  	"Drizzle" [color="blue4"];
+	  	"Percona Server" [color="orange"];
+		"Non-GA" -> "Abbandoned" [style=invisible, arrowhead=none];
+		"Oracle MySQL" -> "MySQL Cluster" [style=invisible, arrowhead=none];
+		"MySQL Cluster" -> "MariaDB" [style=invisible, arrowhead=none];
+		"Drizzle" -> "Percona Server" [style=invisible, arrowhead=none];
+		"a" [style=invisible];
+		"b" [style=invisible];
+		"c" [style=invisible];
+		"d" [style=invisible];
+		"a" -> "b" [label="direct relation"];
+		"b" -> "c" [color="grey", label="code merge"];
+	}
 
 	/* MySQL/Sun/Oracle MySQL GA */
 	"MySQL 3.23" [color="red"];
