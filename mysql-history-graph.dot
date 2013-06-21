@@ -90,8 +90,8 @@ digraph mysql_history_graph {
 	/* Drizzle */
 	"Drizzle 7.0" [color="blue4"];
 	"Drizzle 7.1" [color="blue4"];
-	"Drizzle 7.2" [color="blue4"];
-	"MySQL 6.0" -> "Drizzle 7.0"	
-	"Drizzle 7.0" -> "Drizzle 7.1"	
-	"Drizzle 7.1" -> "Drizzle 7.2"	
+	"Drizzle 7.2" [color="blue4", style="dashed"];
+	"MySQL 6.0" -> "Drizzle 7.0";
+	"Drizzle 7.0" -> "Drizzle 7.1";
+	"Drizzle 7.1" -> "Drizzle 7.2" [style="dashed"];
 }
