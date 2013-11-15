@@ -231,12 +231,12 @@
 </g>
 <!-- Percona Server 5.6 -->
 <g id="node61" class="node"><title>Percona Server 5.6</title>
-<ellipse fill="none" stroke="orange" stroke-dasharray="5,2" cx="637" cy="-93" rx="104.151" ry="18.3848"/>
+<ellipse fill="none" stroke="orange" cx="637" cy="-93" rx="104.151" ry="18.3848"/>
 <text text-anchor="middle" x="637" y="-89.4" font-family="Times Roman,serif" font-size="14.00">Percona Server 5.6</text>
 </g>
 <!-- MySQL 5.6&#45;&gt;Percona Server 5.6 -->
 <g id="edge84" class="edge"><title>MySQL 5.6&#45;&gt;Percona Server 5.6</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M488.293,-151.846C516.062,-140.858 553.952,-125.864 584.536,-113.761"/>
+<path fill="none" stroke="black" d="M488.293,-151.846C516.062,-140.858 553.952,-125.864 584.536,-113.761"/>
 <polygon fill="black" stroke="black" points="586.176,-116.876 594.186,-109.942 583.6,-110.367 586.176,-116.876"/>
 </g>
 <!-- MySQL 5.4 -->
@@ -356,7 +356,7 @@
 </g>
 <!-- Percona Server 5.5&#45;&gt;Percona Server 5.6 -->
 <g id="edge86" class="edge"><title>Percona Server 5.5&#45;&gt;Percona Server 5.6</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M724.92,-149.087C709.644,-139.342 690.556,-127.165 674.073,-116.65"/>
+<path fill="none" stroke="black" d="M724.92,-149.087C709.644,-139.342 690.556,-127.165 674.073,-116.65"/>
 <polygon fill="black" stroke="black" points="675.537,-113.432 665.224,-111.005 671.772,-119.334 675.537,-113.432"/>
 </g>
 <!-- Percona Server 5.0&#45;&gt;Percona Server 5.1 -->
