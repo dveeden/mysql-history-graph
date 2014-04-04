@@ -316,7 +316,7 @@
 </g>
 <!-- MariaDB 10.0 -->
 <g id="node44" class="node"><title>MariaDB 10.0</title>
-<ellipse fill="none" stroke="blue" stroke-dasharray="5,2" cx="819" cy="-19" rx="79.196" ry="18.3848"/>
+<ellipse fill="none" stroke="blue" cx="819" cy="-19" rx="79.196" ry="18.3848"/>
 <text text-anchor="middle" x="819" y="-15.4" font-family="Times Roman,serif" font-size="14.00">MariaDB 10.0</text>
 </g>
 <!-- MariaDB 5.5&#45;&gt;MariaDB 10.0 -->
