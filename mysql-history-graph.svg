@@ -296,12 +296,12 @@
 </g>
 <!-- MySQL Cluster 7.4 -->
 <g id="node29" class="node"><title>MySQL Cluster 7.4</title>
-<ellipse fill="none" stroke="#cd0000" cx="264" cy="-19" rx="103.238" ry="18.3848"/>
+<ellipse fill="none" stroke="#cd0000" stroke-dasharray="5,2" cx="264" cy="-19" rx="103.238" ry="18.3848"/>
 <text text-anchor="middle" x="264" y="-15.4" font-family="Times Roman,serif" font-size="14.00">MySQL Cluster 7.4</text>
 </g>
 <!-- MySQL Cluster 7.3&#45;&gt;MySQL Cluster 7.4 -->
 <g id="edge46" class="edge"><title>MySQL Cluster 7.3&#45;&gt;MySQL Cluster 7.4</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M264,-74.3267C264,-66.2639 264,-56.6477 264,-47.7115"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M264,-74.3267C264,-66.2639 264,-56.6477 264,-47.7115"/>
 <polygon fill="black" stroke="black" points="267.5,-47.6673 264,-37.6674 260.5,-47.6674 267.5,-47.6673"/>
 </g>
 <!-- MariaDB 5.1&#45;&gt;MariaDB 5.2 -->
