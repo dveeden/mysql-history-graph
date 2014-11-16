@@ -62,6 +62,7 @@ digraph mysql_history_graph {
 	"MariaDB 5.3" [color="blue"];
 	"MariaDB 5.5" [color="blue"];
 	"MariaDB 10.0" [color="blue"];
+	"MariaDB 10.1" [color="blue",style="dotted"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -75,6 +76,7 @@ digraph mysql_history_graph {
 	"Percona Server 5.5" -> "MariaDB 5.5" [color="grey"]; // XtraDB
 	"MariaDB 5.5" -> "MariaDB 10.0" [style="dashed"];
 	"Percona Server 5.5" -> "MariaDB 10.0" [color="grey"]; // XtraDB
+	"MariaDB 10.0" -> "MariaDB 10.1" [color="grey",style="dotted"];
 
 	/* Percona Server */
 	"Percona Server 5.0" [color="orange"];
