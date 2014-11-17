@@ -1,6 +1,6 @@
 digraph mysql_history_graph {
 	/* Standards:
-	   Non-GA: 		dotted
+	   Non-GA: 		dashed
 	   Abandoned: 		dotted 
 	   Oracle MySQL: 	red
 	   MySQL Cluster: 	red3
@@ -10,6 +10,10 @@ digraph mysql_history_graph {
 	*/
 
 	/* MySQL/Sun/Oracle MySQL GA */
+	"MySQL 3.19" [color="red"];
+	"MySQL 3.20" [color="red"];
+	"MySQL 3.21" [color="red"];
+	"MySQL 3.22" [color="red"];
 	"MySQL 3.23" [color="red"];
 	"MySQL 4.0" [color="red"];
 	"MySQL 4.1" [color="red"];
@@ -17,6 +21,10 @@ digraph mysql_history_graph {
 	"MySQL 5.1" [color="red"];
 	"MySQL 5.5" [color="red"];
 	"MySQL 5.6" [color="red"];
+	"MySQL 3.19" -> "MySQL 3.20";
+	"MySQL 3.20" -> "MySQL 3.21";
+	"MySQL 3.21" -> "MySQL 3.22";
+	"MySQL 3.22" -> "MySQL 3.23";
 	"MySQL 3.23" -> "MySQL 4.0";
 	"MySQL 4.0" -> "MySQL 4.1";
 	"MySQL 4.1" -> "MySQL 5.0";
@@ -28,7 +36,7 @@ digraph mysql_history_graph {
 	/* MySQL/Sun/Oracle non-GA */	
 	"MySQL 5.2" [color="red",style="dotted"];
 	"MySQL 5.4" [color="red",style="dotted"];
-	"MySQL 5.7" [color="red",style="dotted"];
+	"MySQL 5.7" [color="red",style="dashed"];
 	"MySQL 6.0" [color="red",style="dotted"];
 	"MySQL 5.1" -> "MySQL 5.2" [style="dashed"];
 	"MySQL 5.1" -> "MySQL 6.0" [style="dashed"];
@@ -54,7 +62,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.1" -> "MySQL Cluster 7.2";
 	"MySQL 5.6" -> "MySQL Cluster 7.3";
 	"MySQL Cluster 7.2" -> "MySQL Cluster 7.3";
-	"MySQL Cluster 7.3" -> "MySQL Cluster 7.4" [style="dotted"];
+	"MySQL Cluster 7.3" -> "MySQL Cluster 7.4" [style="dashed"];
 
 	/* MariaDB */
 	"MariaDB 5.1" [color="blue"];
@@ -62,7 +70,7 @@ digraph mysql_history_graph {
 	"MariaDB 5.3" [color="blue"];
 	"MariaDB 5.5" [color="blue"];
 	"MariaDB 10.0" [color="blue"];
-	"MariaDB 10.1" [color="blue",style="dotted"];
+	"MariaDB 10.1" [color="blue",style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -74,9 +82,9 @@ digraph mysql_history_graph {
 	"MySQL 5.5" -> "MariaDB 5.5";
 	"MariaDB 5.3" -> "MariaDB 5.5";
 	"Percona Server 5.5" -> "MariaDB 5.5" [color="grey"]; // XtraDB
-	"MariaDB 5.5" -> "MariaDB 10.0" [style="dashed"];
+	"MariaDB 5.5" -> "MariaDB 10.0";
 	"Percona Server 5.5" -> "MariaDB 10.0" [color="grey"]; // XtraDB
-	"MariaDB 10.0" -> "MariaDB 10.1" [color="grey",style="dotted"];
+	"MariaDB 10.0" -> "MariaDB 10.1" [style="dashed"];
 
 	/* Percona Server */
 	"Percona Server 5.0" [color="orange"];
