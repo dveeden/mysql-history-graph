@@ -9,6 +9,58 @@ digraph mysql_history_graph {
 	   Percona Server: 	orange
 	*/
 
+        "1996";
+        "1997";
+        "1998";
+        "1999";
+        "2000";
+        "2001";
+        "2002";
+        "2003";
+        "2004";
+        "2005";
+        "2006";
+        "2007";
+        "2008";
+        "2009";
+        "2010";
+        "2011";
+        "2012";
+        "2013";
+        "2014";
+        "2015";
+        "future";
+
+        "1996" -> "1997" -> "1998" -> "1999" -> "2000";
+        "2000" -> "2001" -> "2002" -> "2003" -> "2004" -> "2005";
+        "2005" -> "2006" -> "2007" -> "2008" -> "2009" -> "2010";
+        "2010" -> "2011" -> "2012" -> "2013" -> "2014" -> "2015";
+        "2015" -> "future";
+
+        /* The release date (GA date if possible) */
+        {rank=same; "1996" "MySQL 3.19" }
+        {rank=same; "1997" "MySQL 3.20" }
+        {rank=same; "1998" "MySQL 3.21" "MySQL 3.22" }
+        {rank=same; "1999" }
+        {rank=same; "2000" "MySQL 3.23" }
+        {rank=same; "2001" }
+        {rank=same; "2002" }
+        {rank=same; "2003" "MySQL 4.0" }
+        {rank=same; "2004" "MySQL 4.1" }
+        {rank=same; "2005" "MySQL 5.0" }
+        {rank=same; "2006" "MySQL Cluster 6.1" }
+        {rank=same; "2007" "MySQL Cluster 6.2" }
+        {rank=same; "2008" "MySQL 5.1" "MySQL Cluster 6.3" }
+        {rank=same; "2009" "MySQL 6.0" "MySQL 5.2" "MySQL 5.4" "Percona Server 5.1" "MySQL Cluster 7.0"}
+        {rank=same; "2010" "MySQL 5.5" "MySQL Cluster 7.1" "MariaDB 5.1" "MariaDB 5.2" }
+        {rank=same; "2011" "Percona Server 5.5" "Drizzle 7.0" }
+        {rank=same; "2012" "MySQL Cluster 7.2" "Drizzle 7.1" "MariaDB 5.3" "MariaDB 5.5" }
+        {rank=same; "2013" "MySQL 5.6" "Percona Server 5.6" "MySQL Cluster 7.3" "Drizzle 7.2" }
+        {rank=same; "2014" "MariaDB 10.0" }
+        {rank=same; "2015" }
+        {rank=same; "future" "MariaDB 10.1" "MySQL 5.7" "MySQL Cluster 7.4" "Percona Server 5.7" }
+        
+
 	/* MySQL/Sun/Oracle MySQL GA */
 	"MySQL 3.19" [color="red"];
 	"MySQL 3.20" [color="red"];
@@ -44,6 +96,7 @@ digraph mysql_history_graph {
 	"MySQL 5.6" -> "MySQL 5.7" [style="dashed"];
 
 	/* MySQL Cluster (NDB) */
+	"MySQL Cluster 6.1" [color="red3"]
 	"MySQL Cluster 6.2" [color="red3"]
 	"MySQL Cluster 6.3" [color="red3"]
 	"MySQL Cluster 7.0" [color="red3"]
@@ -51,6 +104,8 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.2" [color="red3"]
 	"MySQL Cluster 7.3"  [color="red3"]
 	"MySQL Cluster 7.4"  [color="red3", style="dashed"]
+	"MySQL 5.1" -> "MySQL Cluster 6.1";
+	"MySQL Cluster 6.1" -> "MySQL Cluster 6.2";
 	"MySQL 5.1" -> "MySQL Cluster 6.2";
 	"MySQL 5.1" -> "MySQL Cluster 6.3";
 	"MySQL Cluster 6.2" -> "MySQL Cluster 6.3";
@@ -91,6 +146,7 @@ digraph mysql_history_graph {
 	"Percona Server 5.1" [color="orange"];
 	"Percona Server 5.5" [color="orange"];
 	"Percona Server 5.6" [color="orange"];
+	"Percona Server 5.7" [color="orange", style="dashed"];
 	"MySQL 5.0" -> "Percona Server 5.0";
 	"MySQL 5.1" -> "Percona Server 5.1";
 	"Percona Server 5.0" -> "Percona Server 5.1";
@@ -99,6 +155,8 @@ digraph mysql_history_graph {
 	"MariaDB 5.3" -> "Percona Server 5.5" [color="grey"]; // group commit
 	"MySQL 5.6" -> "Percona Server 5.6";
 	"Percona Server 5.5" -> "Percona Server 5.6";
+	"MySQL 5.7" -> "Percona Server 5.7" [style="dashed"];
+	"Percona Server 5.6" -> "Percona Server 5.7" [style="dashed"];
 
 	/* Drizzle */
 	"Drizzle 7.0" [color="blue4"];
