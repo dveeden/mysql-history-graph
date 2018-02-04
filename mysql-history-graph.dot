@@ -53,7 +53,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.2" [color="red3"]
 	"MySQL Cluster 7.3"  [color="red3"]
 	"MySQL Cluster 7.4"  [color="red3"]
-	"MySQL Cluster 7.5"  [color="red3", style="dashed"]
+	"MySQL Cluster 7.5"  [color="red3"]
 	"MySQL 5.1" -> "MySQL Cluster 6.2";
 	"MySQL 5.1" -> "MySQL Cluster 6.3";
 	"MySQL Cluster 6.2" -> "MySQL Cluster 6.3";
@@ -67,7 +67,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.2" -> "MySQL Cluster 7.3";
 	"MySQL Cluster 7.3" -> "MySQL Cluster 7.4";
 	"MySQL 5.7" -> "MySQL Cluster 7.5";
-	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5" [style="dashed"];
+	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5";
 
 	/* MariaDB */
 	"MariaDB 5.1" [color="blue"];
@@ -76,7 +76,8 @@ digraph mysql_history_graph {
 	"MariaDB 5.5" [color="blue"];
 	"MariaDB 10.0" [color="blue"];
 	"MariaDB 10.1" [color="blue"];
-	"MariaDB 10.2" [color="blue",style="dashed"];
+	"MariaDB 10.2" [color="blue"];
+	"MariaDB 10.3" [color="blue",style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -89,9 +90,13 @@ digraph mysql_history_graph {
 	"MariaDB 5.3" -> "MariaDB 5.5";
 	"Percona Server 5.5" -> "MariaDB 5.5" [color="grey"]; // XtraDB
 	"MariaDB 5.5" -> "MariaDB 10.0";
-	"Percona Server 5.5" -> "MariaDB 10.0" [color="grey"]; // XtraDB
 	"MariaDB 10.0" -> "MariaDB 10.1";
-	"MariaDB 10.1" -> "MariaDB 10.2" [style="dashed"];
+	"Percona Server 5.6" -> "MariaDB 10.0" [color="grey"]; // XtraDB
+	"MariaDB 10.1" -> "MariaDB 10.2"; // InnoDB
+	"Percona Server 5.6" -> "MariaDB 10.1" [color="grey"]; // XtraDB
+	"MariaDB 10.2" -> "MariaDB 10.3" [style="dashed"];
+	"MySQL 5.7" -> "MariaDB 10.2" [color="grey"]; // InnoDB
+
 
 	/* Percona Server */
 	"Percona Server 5.0" [color="orange"];
