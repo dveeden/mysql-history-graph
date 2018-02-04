@@ -45,6 +45,9 @@ digraph mysql_history_graph {
 	"MySQL 5.2" -> "MySQL 5.4" [style="dashed"];
 	"MySQL 5.7" -> "MySQL 8.0" [style="dashed"];
 
+	// Buffer pool mutex split patch, temp table replication improvements in RBR/MBR, numerous bugfixes
+	"Percona Server 5.7" -> "MySQL 8.0" [color="grey"];
+
 	/* MySQL Cluster (NDB) */
 	"MySQL Cluster 6.2" [color="red3"]
 	"MySQL Cluster 6.3" [color="red3"]
