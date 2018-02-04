@@ -54,6 +54,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.3"  [color="red3"]
 	"MySQL Cluster 7.4"  [color="red3"]
 	"MySQL Cluster 7.5"  [color="red3"]
+	"MySQL Cluster 7.6"  [color="red3",style="dashed"]
 	"MySQL 5.1" -> "MySQL Cluster 6.2";
 	"MySQL 5.1" -> "MySQL Cluster 6.3";
 	"MySQL Cluster 6.2" -> "MySQL Cluster 6.3";
@@ -68,6 +69,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.3" -> "MySQL Cluster 7.4";
 	"MySQL 5.7" -> "MySQL Cluster 7.5";
 	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5";
+	"MySQL Cluster 7.5" -> "MySQL Cluster 7.6" [style="dashed"];
 
 	/* MariaDB */
 	"MariaDB 5.1" [color="blue"];
