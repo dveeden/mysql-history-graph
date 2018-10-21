@@ -22,6 +22,7 @@ digraph mysql_history_graph {
 	"MySQL 5.5" [color="red"];
 	"MySQL 5.6" [color="red"];
 	"MySQL 5.7" [color="red"];
+	"MySQL 8.0" [color="red"];
 	"MySQL 3.19" -> "MySQL 3.20";
 	"MySQL 3.20" -> "MySQL 3.21";
 	"MySQL 3.21" -> "MySQL 3.22";
@@ -32,6 +33,7 @@ digraph mysql_history_graph {
 	"MySQL 5.0" -> "MySQL 5.1";
 	"MySQL 5.5" -> "MySQL 5.6";
 	"MySQL 5.6" -> "MySQL 5.7";
+	"MySQL 5.7" -> "MySQL 8.0";
 	"MySQL 5.4" -> "MySQL 5.5" [color="grey"]; // InnoDB Scalability
 	"MySQL 6.0" -> "MySQL 5.5" [color="grey"]; // Optimizer improvements
 
@@ -39,11 +41,9 @@ digraph mysql_history_graph {
 	"MySQL 5.2" [color="red",style="dotted"];
 	"MySQL 5.4" [color="red",style="dotted"];
 	"MySQL 6.0" [color="red",style="dotted"];
-	"MySQL 8.0" [color="red",style="dashed"];
 	"MySQL 5.1" -> "MySQL 5.2" [style="dashed"];
 	"MySQL 5.1" -> "MySQL 6.0" [style="dashed"];
 	"MySQL 5.2" -> "MySQL 5.4" [style="dashed"];
-	"MySQL 5.7" -> "MySQL 8.0" [style="dashed"];
 
 	// Buffer pool mutex split patch, temp table replication improvements in RBR/MBR, numerous bugfixes
 	"Percona Server 5.7" -> "MySQL 8.0" [color="grey"];
@@ -57,7 +57,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.3"  [color="red3"]
 	"MySQL Cluster 7.4"  [color="red3"]
 	"MySQL Cluster 7.5"  [color="red3"]
-	"MySQL Cluster 7.6"  [color="red3",style="dashed"]
+	"MySQL Cluster 7.6"  [color="red3"]
 	"MySQL 5.1" -> "MySQL Cluster 6.2";
 	"MySQL 5.1" -> "MySQL Cluster 6.3";
 	"MySQL Cluster 6.2" -> "MySQL Cluster 6.3";
@@ -72,7 +72,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.3" -> "MySQL Cluster 7.4";
 	"MySQL 5.7" -> "MySQL Cluster 7.5";
 	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5";
-	"MySQL Cluster 7.5" -> "MySQL Cluster 7.6" [style="dashed"];
+	"MySQL Cluster 7.5" -> "MySQL Cluster 7.6";
 
 	/* MariaDB */
 	"MariaDB 5.1" [color="blue"];
@@ -82,7 +82,7 @@ digraph mysql_history_graph {
 	"MariaDB 10.0" [color="blue"];
 	"MariaDB 10.1" [color="blue"];
 	"MariaDB 10.2" [color="blue"];
-	"MariaDB 10.3" [color="blue",style="dashed"];
+	"MariaDB 10.3" [color="blue"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -99,7 +99,7 @@ digraph mysql_history_graph {
 	"Percona Server 5.6" -> "MariaDB 10.0" [color="grey"]; // XtraDB
 	"MariaDB 10.1" -> "MariaDB 10.2"; // InnoDB
 	"Percona Server 5.6" -> "MariaDB 10.1" [color="grey"]; // XtraDB
-	"MariaDB 10.2" -> "MariaDB 10.3" [style="dashed"];
+	"MariaDB 10.2" -> "MariaDB 10.3";
 	"MySQL 5.7" -> "MariaDB 10.2" [color="grey"]; // InnoDB
 
 
@@ -109,6 +109,7 @@ digraph mysql_history_graph {
 	"Percona Server 5.5" [color="orange"];
 	"Percona Server 5.6" [color="orange"];
 	"Percona Server 5.7" [color="orange"];
+	"Percona Server 8.0" [color="orange", style="dashed"];
 	"MySQL 5.0" -> "Percona Server 5.0";
 	"MySQL 5.1" -> "Percona Server 5.1";
 	"Percona Server 5.0" -> "Percona Server 5.1";
@@ -119,6 +120,8 @@ digraph mysql_history_graph {
 	"Percona Server 5.5" -> "Percona Server 5.6";
 	"MySQL 5.7" -> "Percona Server 5.7";
 	"Percona Server 5.6" -> "Percona Server 5.7";
+	"Percona Server 5.7" -> "Percona Server 8.0" [style="dashed"];
+	"MySQL 8.0" -> "Percona Server 8.0" [style="dashed"];
 
 	/* Drizzle */
 	"Drizzle 7.0" [color="blue4"];
