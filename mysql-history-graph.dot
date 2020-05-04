@@ -31,11 +31,12 @@ digraph mysql_history_graph {
 	"MySQL 4.0" -> "MySQL 4.1";
 	"MySQL 4.1" -> "MySQL 5.0";
 	"MySQL 5.0" -> "MySQL 5.1";
+	"MySQL 6.0" -> "MySQL 5.5" [color="grey"]; // Optimizer improvements
+	"MySQL 5.4" -> "MySQL 5.5" [color="grey"]; // InnoDB Scalability
 	"MySQL 5.5" -> "MySQL 5.6";
 	"MySQL 5.6" -> "MySQL 5.7";
 	"MySQL 5.7" -> "MySQL 8.0";
-	"MySQL 5.4" -> "MySQL 5.5" [color="grey"]; // InnoDB Scalability
-	"MySQL 6.0" -> "MySQL 5.5" [color="grey"]; // Optimizer improvements
+	"MySQL Cluster 7.6" -> "MySQL 8.0";
 
 	/* MySQL/Sun/Oracle non-GA */	
 	"MySQL 5.2" [color="red",style="dotted"];
@@ -83,6 +84,8 @@ digraph mysql_history_graph {
 	"MariaDB 10.1" [color="blue"];
 	"MariaDB 10.2" [color="blue"];
 	"MariaDB 10.3" [color="blue"];
+	"MariaDB 10.4" [color="blue"];
+	"MariaDB 10.5" [color="blue", style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -102,6 +105,16 @@ digraph mysql_history_graph {
 	"MariaDB 10.2" -> "MariaDB 10.3";
 	"MySQL 5.7" -> "MariaDB 10.2" [color="grey"]; // InnoDB
 
+        /*
+         * https://mariadb.com/kb/en/innodb-versions/
+         * "In MariaDB 10.3.7 and later, the InnoDB implementation has diverged
+         * substantially from the InnoDB in MySQL. Therefore, in these versions,
+         * the InnoDB version is no longer associated with a MySQL release
+         * version."
+         */
+	"MariaDB 10.3" -> "MariaDB 10.4";
+	"MariaDB 10.4" -> "MariaDB 10.5" [style="dashed"];
+
 
 	/* Percona Server */
 	"Percona Server 5.0" [color="orange"];
@@ -109,7 +122,7 @@ digraph mysql_history_graph {
 	"Percona Server 5.5" [color="orange"];
 	"Percona Server 5.6" [color="orange"];
 	"Percona Server 5.7" [color="orange"];
-	"Percona Server 8.0" [color="orange", style="dashed"];
+	"Percona Server 8.0" [color="orange"];
 	"MySQL 5.0" -> "Percona Server 5.0";
 	"MySQL 5.1" -> "Percona Server 5.1";
 	"Percona Server 5.0" -> "Percona Server 5.1";
@@ -120,8 +133,8 @@ digraph mysql_history_graph {
 	"Percona Server 5.5" -> "Percona Server 5.6";
 	"MySQL 5.7" -> "Percona Server 5.7";
 	"Percona Server 5.6" -> "Percona Server 5.7";
-	"Percona Server 5.7" -> "Percona Server 8.0" [style="dashed"];
-	"MySQL 8.0" -> "Percona Server 8.0" [style="dashed"];
+	"Percona Server 5.7" -> "Percona Server 8.0";
+	"MySQL 8.0" -> "Percona Server 8.0";
 
 	/* Drizzle */
 	"Drizzle 7.0" [color="blue4"];
