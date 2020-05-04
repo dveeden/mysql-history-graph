@@ -1,12 +1,14 @@
 digraph mysql_history_graph {
 	/* Standards:
-	   Non-GA: 		dashed
-	   Abandoned: 		dotted 
-	   Oracle MySQL: 	red
-	   MySQL Cluster: 	red3
-	   MariaDB: 		blue
-	   Drizzle: 		blue4
-	   Percona Server: 	orange
+	   Non-GA: 		                    dashed
+	   Abandoned / No public release: 	dotted
+	   Oracle MySQL: 	                red
+	   MySQL Cluster: 	                red3
+	   MariaDB: 		                blue
+       InfiniDB:                        steelblue
+       MariaDB ColumnStore:             dodgerblue
+	   Drizzle: 		                blue4
+	   Percona Server: 	                orange
 	*/
 
 	/* MySQL/Sun/Oracle MySQL GA */
@@ -115,6 +117,41 @@ digraph mysql_history_graph {
 	"MariaDB 10.3" -> "MariaDB 10.4";
 	"MariaDB 10.4" -> "MariaDB 10.5" [style="dashed"];
 
+    /* InfiniDB */
+    "InfiniDB 1.5" [color="steelblue"];
+    "InfiniDB 2.0" [color="steelblue"];
+    "InfiniDB 2.2" [color="steelblue"];
+    "InfiniDB 3.5" [color="steelblue"];
+    "InfiniDB 3.6" [color="steelblue"];
+    "InfiniDB 4.0" [color="steelblue"];
+    "InfiniDB 4.5" [color="steelblue"];
+    "MySQL 5.1" -> "InfiniDB 1.5";
+    "InfiniDB 1.5" -> "InfiniDB 2.0";
+    "InfiniDB 2.0" -> "InfiniDB 2.2";
+    "InfiniDB 2.2" -> "InfiniDB 3.5";
+    "InfiniDB 3.5" -> "InfiniDB 3.6";
+    "InfiniDB 3.6" -> "InfiniDB 4.0";
+    "InfiniDB 4.0" -> "InfiniDB 4.5";
+
+    /* MariaDB ColumnStore */
+    "MariaDB ColumnStore 1.0" [color="dodgerblue"];
+    "MariaDB ColumnStore 1.1" [color="dodgerblue"];
+    "MariaDB ColumnStore 1.2" [color="dodgerblue"];
+    /*
+     * ColumnStore is no longer a fork with 1.4 but released as part of MariaDB
+     * Enterprise 10.4. The codebase is still separate at this time though.
+     * Timing meant it couldn't make it to community 10.4 but the two are
+     * expected to merge for 10.5.
+     */
+    "MariaDB ColumnStore 1.4" [color="dodgerblue",style="dotted"]; // Enterprise only, no longer fork
+    "InfiniDB 4.5" -> "MariaDB ColumnStore 1.0";
+    "MariaDB 10.1" -> "MariaDB ColumnStore 1.0";
+    "MariaDB ColumnStore 1.0" -> "MariaDB ColumnStore 1.1";
+    "MariaDB 10.2" -> "MariaDB ColumnStore 1.1";
+    "MariaDB ColumnStore 1.1" -> "MariaDB ColumnStore 1.2";
+    "MariaDB 10.3" -> "MariaDB ColumnStore 1.2";
+    "MariaDB ColumnStore 1.2" -> "MariaDB ColumnStore 1.4";
+    "MariaDB ColumnStore 1.4" -> "MariaDB 10.5" [style="dashed"]; // Tentative
 
 	/* Percona Server */
 	"Percona Server 5.0" [color="orange"];
