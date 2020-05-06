@@ -1,14 +1,21 @@
 digraph mysql_history_graph {
 	/* Standards:
-	   Non-GA: 		                    dashed
-	   Abandoned / No public release: 	dotted
-	   Oracle MySQL: 	                red
-	   MySQL Cluster: 	                red3
-	   MariaDB: 		                blue
-       InfiniDB:                        steelblue
-       MariaDB ColumnStore:             dodgerblue
-	   Drizzle: 		                blue4
-	   Percona Server: 	                orange
+           Non-GA:                          dashed
+           Abandoned / No public release:   dotted
+
+           Oracle MySQL:        red
+           MySQL Cluster:       red3
+           MariaDB:             blue
+           InfiniDB:            steelblue
+           MariaDB ColumnStore: dodgerblue
+           Drizzle:             blue4
+           Percona Server:      orange
+           Drizzle:             blue4
+           Percona Server:      orange
+           Webscale:            purple
+           OurSQL:              green
+
+           https://www.graphviz.org/doc/info/colors.html
 	*/
 
 	/* MySQL/Sun/Oracle MySQL GA */
@@ -180,4 +187,28 @@ digraph mysql_history_graph {
 	"MySQL 6.0" -> "Drizzle 7.0";
 	"Drizzle 7.0" -> "Drizzle 7.1";
 	"Drizzle 7.1" -> "Drizzle 7.2" [style="dashed"];
+
+        /* Webscale
+
+           As WebscaleSQL didn't do releases, but left that to the consumers
+           of the project it doesn't look like it has versions. In addition
+           it looks like it only ever was based on MySQL 5.6
+
+           * http://webscalesql.org/faq.html
+           * https://en.wikipedia.org/wiki/WebScaleSQL
+         */
+        "WebscaleSQL" [color="purple", style="dotted"];
+        "MySQL 5.6" -> "WebscaleSQL" [style="dotted"];
+
+        /* OurDelta
+
+           * https://openquery.com.au/products/ourdelta
+           * https://code.launchpad.net/~ourdelta-core/ourdelta/trunk
+         */
+
+        "OurDelta 5.0" [color="green"];
+        "OurDelta 5.1" [color="green"];
+        "MySQL 5.0" -> "OurDelta 5.0";
+        "OurDelta 5.0" -> "OurDelta 5.1";
+        "MariaDB 5.1" -> "OurDelta 5.1";
 }
