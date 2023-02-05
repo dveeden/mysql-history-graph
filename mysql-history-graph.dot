@@ -1,5 +1,7 @@
 digraph mysql_history_graph {
-	/* Standards:
+    /* vim: tabstop=4
+
+	   Standards:
 	   Non-GA: 		                    dashed
 	   Abandoned / No public release: 	dotted
 	   Oracle MySQL: 	                red
@@ -87,7 +89,14 @@ digraph mysql_history_graph {
 	"MariaDB 10.2" [color="blue"];
 	"MariaDB 10.3" [color="blue"];
 	"MariaDB 10.4" [color="blue"];
-	"MariaDB 10.5" [color="blue", style="dashed"];
+	"MariaDB 10.5" [color="blue"];
+	"MariaDB 10.6" [color="blue"];
+	"MariaDB 10.7" [color="blue"];
+	"MariaDB 10.8" [color="blue"];
+	"MariaDB 10.9" [color="blue"];
+	"MariaDB 10.10" [color="blue"];
+	"MariaDB 10.11" [color="blue", style="dashed"];
+	"MariaDB 11.0" [color="blue", style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -115,7 +124,14 @@ digraph mysql_history_graph {
          * version."
          */
 	"MariaDB 10.3" -> "MariaDB 10.4";
-	"MariaDB 10.4" -> "MariaDB 10.5" [style="dashed"];
+	"MariaDB 10.4" -> "MariaDB 10.5";
+	"MariaDB 10.5" -> "MariaDB 10.6";
+	"MariaDB 10.6" -> "MariaDB 10.7";
+	"MariaDB 10.7" -> "MariaDB 10.8";
+	"MariaDB 10.8" -> "MariaDB 10.9";
+	"MariaDB 10.9" -> "MariaDB 10.10";
+	"MariaDB 10.10" -> "MariaDB 10.11" [style="dashed"];
+	"MariaDB 10.11" -> "MariaDB 11.0" [style="dashed"];
 
     /* InfiniDB */
     "InfiniDB 1.5" [color="steelblue"];
