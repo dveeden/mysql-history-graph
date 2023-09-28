@@ -198,4 +198,10 @@ digraph mysql_history_graph {
 	"MySQL 6.0" -> "Drizzle 7.0";
 	"Drizzle 7.0" -> "Drizzle 7.1";
 	"Drizzle 7.1" -> "Drizzle 7.2" [style="dashed"];
+
+	"RonDB 21.04" [color="#ffdf00"];
+	"MySQL 8.0" -> "RonDB 21.04";
+	"RonDB 22.10" [color="#ffdf00"];
+	"RonDB 21.04" -> "RonDB 22.10";
+	"MySQL 8.0" -> "RonDB 22.10";
 }
