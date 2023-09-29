@@ -204,4 +204,7 @@ digraph mysql_history_graph {
 	"RonDB 22.10" [color="#ffdf00"];
 	"RonDB 21.04" -> "RonDB 22.10";
 	"MySQL 8.0" -> "RonDB 22.10";
+
+	"WebScaleSQL" [color="#330e50"];
+	"MySQL 5.6" -> "WebScaleSQL";
 }
