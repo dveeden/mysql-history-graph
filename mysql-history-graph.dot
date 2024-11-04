@@ -13,6 +13,9 @@ digraph mysql_history_graph {
 	   Percona Server: 	                LTS=orange, Innovation=orange3
 	*/
 
+	nodesep=0.6;
+	ranksep=0.25;
+
 	/* MySQL/Sun/Oracle MySQL GA */
 	"MySQL 3.19" [color="red"];
 	"MySQL 3.20" [color="red"];
@@ -31,6 +34,8 @@ digraph mysql_history_graph {
 	"MySQL 8.2" [color="pink"];
 	"MySQL 8.3" [color="pink"];
 	"MySQL 8.4" [color="red"];
+	"MySQL 9.0" [color="pink"];
+	"MySQL 9.1" [color="pink"];
 	"MySQL 3.19" -> "MySQL 3.20";
 	"MySQL 3.20" -> "MySQL 3.21";
 	"MySQL 3.21" -> "MySQL 3.22";
@@ -44,11 +49,13 @@ digraph mysql_history_graph {
 	"MySQL 5.5" -> "MySQL 5.6";
 	"MySQL 5.6" -> "MySQL 5.7";
 	"MySQL 5.7" -> "MySQL 8.0";
+	"MySQL Cluster 7.6" -> "MySQL 8.0";
 	"MySQL 8.0" -> "MySQL 8.1";
 	"MySQL 8.1" -> "MySQL 8.2";
 	"MySQL 8.2" -> "MySQL 8.3";
 	"MySQL 8.3" -> "MySQL 8.4";
-	"MySQL Cluster 7.6" -> "MySQL 8.0";
+	"MySQL 8.4" -> "MySQL 9.0";
+	"MySQL 9.0" -> "MySQL 9.1";
 
 	/* MySQL/Sun/Oracle non-GA */	
 	"MySQL 5.2" [color="red",style="dotted"];
@@ -109,7 +116,9 @@ digraph mysql_history_graph {
 	"MariaDB 11.2" [color="blue"];
 	"MariaDB 11.3" [color="blue"];
 	"MariaDB 11.4" [color="blue"];
-	"MariaDB 11.5" [color="blue", style="dashed"];
+	"MariaDB 11.5" [color="blue"];
+	"MariaDB 11.6" [color="blue", style="dashed"];
+	"MariaDB 11.7" [color="blue", style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -149,7 +158,9 @@ digraph mysql_history_graph {
 	"MariaDB 11.1" -> "MariaDB 11.2";
 	"MariaDB 11.2" -> "MariaDB 11.3";
 	"MariaDB 11.3" -> "MariaDB 11.4";
-	"MariaDB 11.4" -> "MariaDB 11.5" [style="dashed"];
+	"MariaDB 11.4" -> "MariaDB 11.5";
+	"MariaDB 11.5" -> "MariaDB 11.6" [style="dashed"];
+	"MariaDB 11.6" -> "MariaDB 11.7" [style="dashed"];
 
     /* InfiniDB */
     "InfiniDB 1.5" [color="steelblue"];
@@ -197,6 +208,7 @@ digraph mysql_history_graph {
 	"Percona Server 8.1" [color="orange3"];
 	"Percona Server 8.2" [color="orange3"];
 	"Percona Server 8.3" [color="orange3"];
+	"Percona Server 8.4" [color="orange3"];
 	"MySQL 5.0" -> "Percona Server 5.0";
 	"MySQL 5.1" -> "Percona Server 5.1";
 	"Percona Server 5.0" -> "Percona Server 5.1";
@@ -215,6 +227,8 @@ digraph mysql_history_graph {
 	"MySQL 8.2" -> "Percona Server 8.2";
 	"Percona Server 8.2" -> "Percona Server 8.3";
 	"MySQL 8.3" -> "Percona Server 8.3";
+	"Percona Server 8.3" -> "Percona Server 8.4";
+	"MySQL 8.4" -> "Percona Server 8.4";
 
 	/* Drizzle */
 	"Drizzle 7.0" [color="blue4"];
