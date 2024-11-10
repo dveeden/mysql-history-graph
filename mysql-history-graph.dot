@@ -58,9 +58,23 @@ digraph mysql_history_graph {
 	"MySQL 9.0" -> "MySQL 9.1";
 
 	/* MySQL/Sun/Oracle non-GA */	
+	//
+	// "1.0 was released to a limited group of four people"
+	// "3.11.1 was released to the public as a binary distribution for Solaris"
+	//
+	// Source:
+	//   MySQL Introduction:
+	//   A look at the MySQL database--where it's been, where it is now, and where it's going.
+	//   by David Axmark and Michael Widenius
+	// https://dl.acm.org/doi/fullHtml/10.5555/328036.328041
+
+	"MySQL 1.0" [color="red",style="dotted"];
+	"MySQL 3.11.1" [color="red",style="dotted"];
 	"MySQL 5.2" [color="red",style="dotted"];
 	"MySQL 5.4" [color="red",style="dotted"];
 	"MySQL 6.0" [color="red",style="dotted"];
+	"MySQL 1.0" -> "MySQL 3.11.1" [style="dashed"];
+	"MySQL 3.11.1" -> "MySQL 3.19" [style="dashed"];
 	"MySQL 5.1" -> "MySQL 5.2" [style="dashed"];
 	"MySQL 5.1" -> "MySQL 6.0" [style="dashed"];
 	"MySQL 5.2" -> "MySQL 5.4" [style="dashed"];
