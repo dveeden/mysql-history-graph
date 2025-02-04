@@ -1,0 +1,104 @@
+digraph mysql_only_history_graph {
+    /* vim: tabstop=4
+
+	   Standards:
+	   Non-GA: 		                    dashed
+	   Abandoned / No public release: 	dotted
+	   Oracle MySQL: 	                LTS=red, Innovation=pink
+	   MySQL Cluster: 	                red3
+	*/
+
+	nodesep=0.5;
+	ranksep=0.25;
+
+	/* MySQL/Sun/Oracle MySQL GA */
+	"MySQL 3.19" [color="red"];
+	"MySQL 3.20" [color="red"];
+	"MySQL 3.21" [color="red"];
+	"MySQL 3.22" [color="red"];
+	"MySQL 3.23" [color="red"];
+	"MySQL 4.0" [color="red"];
+	"MySQL 4.1" [color="red"];
+	"MySQL 5.0" [color="red"];
+	"MySQL 5.1" [color="red"];
+	"MySQL 5.5" [color="red"];
+	"MySQL 5.6" [color="red"];
+	"MySQL 5.7" [color="red"];
+	"MySQL 8.0" [color="red"];
+	"MySQL 8.1" [color="pink"];
+	"MySQL 8.2" [color="pink"];
+	"MySQL 8.3" [color="pink"];
+	"MySQL 8.4" [color="red"];
+	"MySQL 9.0" [color="pink"];
+	"MySQL 9.1" [color="pink"];
+	"MySQL 9.2" [color="pink"];
+	"MySQL 3.19" -> "MySQL 3.20";
+	"MySQL 3.20" -> "MySQL 3.21";
+	"MySQL 3.21" -> "MySQL 3.22";
+	"MySQL 3.22" -> "MySQL 3.23";
+	"MySQL 3.23" -> "MySQL 4.0";
+	"MySQL 4.0" -> "MySQL 4.1";
+	"MySQL 4.1" -> "MySQL 5.0";
+	"MySQL 5.0" -> "MySQL 5.1";
+	"MySQL 6.0" -> "MySQL 5.5" [color="grey"]; // Optimizer improvements
+	"MySQL 5.4" -> "MySQL 5.5" [color="grey"]; // InnoDB Scalability
+	"MySQL 5.5" -> "MySQL 5.6";
+	"MySQL 5.6" -> "MySQL 5.7";
+	"MySQL 5.7" -> "MySQL 8.0";
+	"MySQL Cluster 7.6" -> "MySQL 8.0";
+	"MySQL 8.0" -> "MySQL 8.1";
+	"MySQL 8.1" -> "MySQL 8.2";
+	"MySQL 8.2" -> "MySQL 8.3";
+	"MySQL 8.3" -> "MySQL 8.4";
+	"MySQL 8.4" -> "MySQL 9.0";
+	"MySQL 9.0" -> "MySQL 9.1";
+	"MySQL 9.1" -> "MySQL 9.2";
+
+	/* MySQL/Sun/Oracle non-GA */	
+	//
+	// "1.0 was released to a limited group of four people"
+	// "3.11.1 was released to the public as a binary distribution for Solaris"
+	//
+	// Source:
+	//   MySQL Introduction:
+	//   A look at the MySQL database--where it's been, where it is now, and where it's going.
+	//   by David Axmark and Michael Widenius
+	// https://dl.acm.org/doi/fullHtml/10.5555/328036.328041
+
+	"MySQL 1.0" [color="red",style="dotted"];
+	"MySQL 3.11.1" [color="red",style="dotted"];
+	"MySQL 5.2" [color="red",style="dotted"];
+	"MySQL 5.4" [color="red",style="dotted"];
+	"MySQL 6.0" [color="red",style="dotted"];
+	"MySQL 1.0" -> "MySQL 3.11.1" [style="dashed"];
+	"MySQL 3.11.1" -> "MySQL 3.19" [style="dashed"];
+	"MySQL 5.1" -> "MySQL 5.2" [style="dashed"];
+	"MySQL 5.1" -> "MySQL 6.0" [style="dashed"];
+	"MySQL 5.2" -> "MySQL 5.4" [style="dashed"];
+
+	/* MySQL Cluster (NDB) */
+	"MySQL Cluster 6.2" [color="red3"]
+	"MySQL Cluster 6.3" [color="red3"]
+	"MySQL Cluster 7.0" [color="red3"]
+	"MySQL Cluster 7.1" [color="red3"]
+	"MySQL Cluster 7.2" [color="red3"]
+	"MySQL Cluster 7.3"  [color="red3"]
+	"MySQL Cluster 7.4"  [color="red3"]
+	"MySQL Cluster 7.5"  [color="red3"]
+	"MySQL Cluster 7.6"  [color="red3"]
+	"MySQL 5.1" -> "MySQL Cluster 6.2";
+	"MySQL 5.1" -> "MySQL Cluster 6.3";
+	"MySQL Cluster 6.2" -> "MySQL Cluster 6.3";
+	"MySQL 5.1" -> "MySQL Cluster 7.0";
+	"MySQL Cluster 6.3" -> "MySQL Cluster 7.0";
+	"MySQL 5.1" -> "MySQL Cluster 7.1";
+	"MySQL Cluster 7.0" -> "MySQL Cluster 7.1";
+	"MySQL 5.5" -> "MySQL Cluster 7.2";
+	"MySQL Cluster 7.1" -> "MySQL Cluster 7.2";
+	"MySQL 5.6" -> "MySQL Cluster 7.3";
+	"MySQL Cluster 7.2" -> "MySQL Cluster 7.3";
+	"MySQL Cluster 7.3" -> "MySQL Cluster 7.4";
+	"MySQL 5.7" -> "MySQL Cluster 7.5";
+	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5";
+	"MySQL Cluster 7.5" -> "MySQL Cluster 7.6";
+}

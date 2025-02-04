@@ -6,14 +6,14 @@ digraph mysql_history_graph {
 	   Abandoned / No public release: 	dotted
 	   Oracle MySQL: 	                LTS=red, Innovation=pink
 	   MySQL Cluster: 	                red3
-	   MariaDB: 		                blue
+	   MariaDB: 		                LTS=blue, rolling=lightblue
        InfiniDB:                        steelblue
        MariaDB ColumnStore:             dodgerblue
 	   Drizzle: 		                blue4
 	   Percona Server: 	                LTS=orange, Innovation=orange3
 	*/
 
-	nodesep=0.6;
+	nodesep=0.5;
 	ranksep=0.25;
 
 	/* MySQL/Sun/Oracle MySQL GA */
@@ -36,6 +36,7 @@ digraph mysql_history_graph {
 	"MySQL 8.4" [color="red"];
 	"MySQL 9.0" [color="pink"];
 	"MySQL 9.1" [color="pink"];
+	"MySQL 9.2" [color="pink"];
 	"MySQL 3.19" -> "MySQL 3.20";
 	"MySQL 3.20" -> "MySQL 3.21";
 	"MySQL 3.21" -> "MySQL 3.22";
@@ -56,6 +57,7 @@ digraph mysql_history_graph {
 	"MySQL 8.3" -> "MySQL 8.4";
 	"MySQL 8.4" -> "MySQL 9.0";
 	"MySQL 9.0" -> "MySQL 9.1";
+	"MySQL 9.1" -> "MySQL 9.2";
 
 	/* MySQL/Sun/Oracle non-GA */	
 	//
@@ -108,7 +110,13 @@ digraph mysql_history_graph {
 	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5";
 	"MySQL Cluster 7.5" -> "MySQL Cluster 7.6";
 
-	/* MariaDB */
+	/*
+		MariaDB
+		Rolling release:	lightblue
+		LTS release:		blue
+		In development: 	dashed
+		https://mariadb.org/about/#maintenance-policy
+	*/
 	"MariaDB 5.1" [color="blue"];
 	"MariaDB 5.2" [color="blue"];
 	"MariaDB 5.3" [color="blue"];
@@ -120,19 +128,20 @@ digraph mysql_history_graph {
 	"MariaDB 10.4" [color="blue"];
 	"MariaDB 10.5" [color="blue"];
 	"MariaDB 10.6" [color="blue"];
-	"MariaDB 10.7" [color="blue"];
-	"MariaDB 10.8" [color="blue"];
-	"MariaDB 10.9" [color="blue"];
-	"MariaDB 10.10" [color="blue"];
+	"MariaDB 10.7" [color="lightblue"];
+	"MariaDB 10.8" [color="lightblue"];
+	"MariaDB 10.9" [color="lightblue"];
+	"MariaDB 10.10" [color="lightblue"];
 	"MariaDB 10.11" [color="blue"];
-	"MariaDB 11.0" [color="blue"];
-	"MariaDB 11.1" [color="blue"];
-	"MariaDB 11.2" [color="blue"];
-	"MariaDB 11.3" [color="blue"];
+	"MariaDB 11.0" [color="lightblue"];
+	"MariaDB 11.1" [color="lightblue"];
+	"MariaDB 11.2" [color="lightblue"];
+	"MariaDB 11.3" [color="lightblue"];
 	"MariaDB 11.4" [color="blue"];
-	"MariaDB 11.5" [color="blue"];
-	"MariaDB 11.6" [color="blue", style="dashed"];
-	"MariaDB 11.7" [color="blue", style="dashed"];
+	"MariaDB 11.5" [color="lightblue"];
+	"MariaDB 11.6" [color="lightblue"];
+	"MariaDB 11.7" [color="lightblue", style="dashed"];
+	"MariaDB 11.8" [color="blue", style="dashed"];
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -173,8 +182,9 @@ digraph mysql_history_graph {
 	"MariaDB 11.2" -> "MariaDB 11.3";
 	"MariaDB 11.3" -> "MariaDB 11.4";
 	"MariaDB 11.4" -> "MariaDB 11.5";
-	"MariaDB 11.5" -> "MariaDB 11.6" [style="dashed"];
+	"MariaDB 11.5" -> "MariaDB 11.6";
 	"MariaDB 11.6" -> "MariaDB 11.7" [style="dashed"];
+	"MariaDB 11.7" -> "MariaDB 11.8" [style="dashed"];
 
     /* InfiniDB */
     "InfiniDB 1.5" [color="steelblue"];
