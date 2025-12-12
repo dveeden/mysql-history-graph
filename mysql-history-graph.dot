@@ -37,6 +37,9 @@ digraph mysql_history_graph {
 	"MySQL 9.0" [color="pink"];
 	"MySQL 9.1" [color="pink"];
 	"MySQL 9.2" [color="pink"];
+	"MySQL 9.3" [color="pink"];
+	"MySQL 9.4" [color="pink"];
+	"MySQL 9.5" [color="pink"];
 	"MySQL 3.19" -> "MySQL 3.20";
 	"MySQL 3.20" -> "MySQL 3.21";
 	"MySQL 3.21" -> "MySQL 3.22";
@@ -58,6 +61,9 @@ digraph mysql_history_graph {
 	"MySQL 8.4" -> "MySQL 9.0";
 	"MySQL 9.0" -> "MySQL 9.1";
 	"MySQL 9.1" -> "MySQL 9.2";
+	"MySQL 9.2" -> "MySQL 9.3";
+	"MySQL 9.3" -> "MySQL 9.4";
+	"MySQL 9.4" -> "MySQL 9.5";
 
 	/* MySQL/Sun/Oracle non-GA */	
 	//
@@ -140,8 +146,12 @@ digraph mysql_history_graph {
 	"MariaDB 11.4" [color="blue"];
 	"MariaDB 11.5" [color="lightblue"];
 	"MariaDB 11.6" [color="lightblue"];
-	"MariaDB 11.7" [color="lightblue", style="dashed"];
-	"MariaDB 11.8" [color="blue", style="dashed"];
+	"MariaDB 11.7" [color="lightblue"];
+	"MariaDB 11.8" [color="blue"];
+	"MariaDB 12.0" [color="lightblue"];
+	"MariaDB 12.1" [color="lightblue"];
+	"MariaDB 12.2" [color="lightblue", style="dashed"];
+
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
 	"MySQL 5.1" -> "MariaDB 5.2";
@@ -183,8 +193,11 @@ digraph mysql_history_graph {
 	"MariaDB 11.3" -> "MariaDB 11.4";
 	"MariaDB 11.4" -> "MariaDB 11.5";
 	"MariaDB 11.5" -> "MariaDB 11.6";
-	"MariaDB 11.6" -> "MariaDB 11.7" [style="dashed"];
-	"MariaDB 11.7" -> "MariaDB 11.8" [style="dashed"];
+	"MariaDB 11.6" -> "MariaDB 11.7";
+	"MariaDB 11.7" -> "MariaDB 11.8";
+	"MariaDB 11.8" -> "MariaDB 12.0";
+	"MariaDB 12.0" -> "MariaDB 12.1";
+	"MariaDB 12.1" -> "MariaDB 12.2" [style="dashed"];
 
     /* InfiniDB */
     "InfiniDB 1.5" [color="steelblue"];
@@ -263,10 +276,13 @@ digraph mysql_history_graph {
 	"Drizzle 7.1" -> "Drizzle 7.2" [style="dashed"];
 
 	"RonDB 21.04" [color="#ffdf00"];
-	"MySQL 8.0" -> "RonDB 21.04";
 	"RonDB 22.10" [color="#ffdf00"];
+	"RonDB 24.10" [color="#ffdf00"]
 	"RonDB 21.04" -> "RonDB 22.10";
+	"RonDB 22.10" -> "RonDB 24.10";
+	"MySQL 8.0" -> "RonDB 21.04";
 	"MySQL 8.0" -> "RonDB 22.10";
+	"MySQL 8.4" -> "RonDB 24.10";
 
 	"WebScaleSQL" [color="#330e50"];
 	"MySQL 5.6" -> "WebScaleSQL";
