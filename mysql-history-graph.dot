@@ -126,6 +126,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 9.3"  [color="pink"]
 	"MySQL Cluster 9.4"  [color="pink"]
 	"MySQL Cluster 9.5"  [color="pink"]
+	"MySQL Cluster 7.6" -> "MySQL Cluster 8.0";
 	"MySQL 8.0" -> "MySQL Cluster 8.0";
 	"MySQL Cluster 8.0" -> "MySQL Cluster 8.1";
 	"MySQL 8.1" -> "MySQL Cluster 8.1";
