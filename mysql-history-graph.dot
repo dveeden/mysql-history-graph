@@ -183,6 +183,7 @@ digraph mysql_history_graph {
 	"MariaDB 12.0" [color="lightblue"];
 	"MariaDB 12.1" [color="lightblue"];
 	"MariaDB 12.2" [color="lightblue", style="dashed"];
+	"MariaDB 12.3" [color="blue", style="dashed"];
 
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
@@ -230,6 +231,7 @@ digraph mysql_history_graph {
 	"MariaDB 11.8" -> "MariaDB 12.0";
 	"MariaDB 12.0" -> "MariaDB 12.1";
 	"MariaDB 12.1" -> "MariaDB 12.2" [style="dashed"];
+	"MariaDB 12.2" -> "MariaDB 12.3" [style="dashed"];
 
     /* InfiniDB */
     "InfiniDB 1.5" [color="steelblue"];
