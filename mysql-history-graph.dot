@@ -115,6 +115,38 @@ digraph mysql_history_graph {
 	"MySQL 5.7" -> "MySQL Cluster 7.5";
 	"MySQL Cluster 7.4" -> "MySQL Cluster 7.5";
 	"MySQL Cluster 7.5" -> "MySQL Cluster 7.6";
+	"MySQL Cluster 8.0"  [color="red3"]
+	"MySQL Cluster 8.1"  [color="pink"]
+	"MySQL Cluster 8.2"  [color="pink"]
+	"MySQL Cluster 8.3"  [color="pink"]
+	"MySQL Cluster 8.4"  [color="red3"]
+	"MySQL Cluster 9.0"  [color="pink"]
+	"MySQL Cluster 9.1"  [color="pink"]
+	"MySQL Cluster 9.2"  [color="pink"]
+	"MySQL Cluster 9.3"  [color="pink"]
+	"MySQL Cluster 9.4"  [color="pink"]
+	"MySQL Cluster 9.5"  [color="pink"]
+	"MySQL 8.0" -> "MySQL Cluster 8.0";
+	"MySQL Cluster 8.0" -> "MySQL Cluster 8.1";
+	"MySQL 8.1" -> "MySQL Cluster 8.1";
+	"MySQL Cluster 8.1" -> "MySQL Cluster 8.2";
+	"MySQL 8.2" -> "MySQL Cluster 8.2";
+	"MySQL Cluster 8.2" -> "MySQL Cluster 8.3";
+	"MySQL 8.3" -> "MySQL Cluster 8.3";
+	"MySQL Cluster 8.3" -> "MySQL Cluster 8.4";
+	"MySQL 8.4" -> "MySQL Cluster 8.4";
+	"MySQL Cluster 8.4" -> "MySQL Cluster 9.0";
+	"MySQL 9.0" -> "MySQL Cluster 9.0";
+	"MySQL Cluster 9.0" -> "MySQL Cluster 9.1";
+	"MySQL 9.1" -> "MySQL Cluster 9.1";
+	"MySQL Cluster 9.1" -> "MySQL Cluster 9.2";
+	"MySQL 9.2" -> "MySQL Cluster 9.2";
+	"MySQL Cluster 9.2" -> "MySQL Cluster 9.3";
+	"MySQL 9.3" -> "MySQL Cluster 9.3";
+	"MySQL Cluster 9.3" -> "MySQL Cluster 9.4";
+	"MySQL 9.4" -> "MySQL Cluster 9.4";
+	"MySQL Cluster 9.4" -> "MySQL Cluster 9.5";
+	"MySQL 9.5" -> "MySQL Cluster 9.5";
 
 	/*
 		MariaDB
@@ -282,10 +314,10 @@ digraph mysql_history_graph {
 	"RonDB 21.04" -> "RonDB 22.10";
 	"RonDB 22.10" -> "RonDB 24.10";
 	"RonDB 24.10" -> "RonDB 25.10" [style="dashed"];
-	"MySQL 8.0" -> "RonDB 21.04";
-	"MySQL 8.0" -> "RonDB 22.10";
-	"MySQL 8.4" -> "RonDB 24.10";
-	"MySQL 8.4" -> "RonDB 25.10" [style="dashed"];
+	"MySQL Cluster 8.0" -> "RonDB 21.04";
+	"MySQL Cluster 8.0" -> "RonDB 22.10";
+	"MySQL Cluster 8.4" -> "RonDB 24.10";
+	"MySQL Cluster 8.4" -> "RonDB 25.10" [style="dashed"];
 
 	"WebScaleSQL" [color="#330e50"];
 	"MySQL 5.6" -> "WebScaleSQL";
