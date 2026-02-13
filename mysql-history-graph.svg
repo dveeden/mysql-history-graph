@@ -1302,7 +1302,7 @@
 <!-- MariaDB 12.2 -->
 <g id="node77" class="node">
 <title>MariaDB 12.2</title>
-<ellipse fill="none" stroke="lightblue" stroke-dasharray="5,2" cx="968.61" cy="-72" rx="65.17" ry="18"/>
+<ellipse fill="none" stroke="lightblue" cx="968.61" cy="-72" rx="65.17" ry="18"/>
 <text xml:space="preserve" text-anchor="middle" x="968.61" y="-66.95" font-family="Times,serif" font-size="14.00">MariaDB 12.2</text>
 </g>
 <!-- MariaDB 12.1&#45;&gt;MariaDB 12.2 -->
