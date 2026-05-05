@@ -40,6 +40,8 @@ digraph mysql_history_graph {
 	"MySQL 9.3" [color="pink"];
 	"MySQL 9.4" [color="pink"];
 	"MySQL 9.5" [color="pink"];
+	"MySQL 9.6" [color="pink"];
+	"MySQL 9.7" [color="red"];
 	"MySQL 3.19" -> "MySQL 3.20";
 	"MySQL 3.20" -> "MySQL 3.21";
 	"MySQL 3.21" -> "MySQL 3.22";
@@ -64,6 +66,8 @@ digraph mysql_history_graph {
 	"MySQL 9.2" -> "MySQL 9.3";
 	"MySQL 9.3" -> "MySQL 9.4";
 	"MySQL 9.4" -> "MySQL 9.5";
+	"MySQL 9.5" -> "MySQL 9.6";
+	"MySQL 9.6" -> "MySQL 9.7";
 
 	/* MySQL/Sun/Oracle non-GA */	
 	//
@@ -126,6 +130,8 @@ digraph mysql_history_graph {
 	"MySQL Cluster 9.3"  [color="pink"]
 	"MySQL Cluster 9.4"  [color="pink"]
 	"MySQL Cluster 9.5"  [color="pink"]
+	"MySQL Cluster 9.6"  [color="pink"]
+	"MySQL Cluster 9.7"  [color="pink"]
 	"MySQL Cluster 7.6" -> "MySQL Cluster 8.0";
 	"MySQL 8.0" -> "MySQL Cluster 8.0";
 	"MySQL Cluster 8.0" -> "MySQL Cluster 8.1";
@@ -148,6 +154,10 @@ digraph mysql_history_graph {
 	"MySQL 9.4" -> "MySQL Cluster 9.4";
 	"MySQL Cluster 9.4" -> "MySQL Cluster 9.5";
 	"MySQL 9.5" -> "MySQL Cluster 9.5";
+	"MySQL Cluster 9.5" -> "MySQL Cluster 9.6";
+	"MySQL 9.6" -> "MySQL Cluster 9.6";
+	"MySQL Cluster 9.6" -> "MySQL Cluster 9.7";
+	"MySQL 9.7" -> "MySQL Cluster 9.7";
 
 	/*
 		MariaDB
