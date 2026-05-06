@@ -16,6 +16,17 @@ digraph postgres_history_graph {
 	   Amazon Aurora PostgreSQL:        #FF9900
 	   Google AlloyDB:                  #4285F4
 	   Neon:                            #00E599
+	   Citus:                           #0078D4
+	   TimescaleDB:                     #FDB813
+	   PolarDB:                         #FF6A00
+	   Kingbase:                        #003399
+	   TBase:                           #00A4FF
+	   Vastbase:                        #0066CC
+	   Amazon Redshift:                 #8C1104
+	   Hydra:                           #00C4CC
+	   AgensGraph:                      #1B4F72
+	   OrioleDB:                        #F26122
+	   ParadeDB:                        #121212
 	*/
 
 	nodesep=0.5;
@@ -28,6 +39,16 @@ digraph postgres_history_graph {
 	"Ingres"     -> "Postgres"          [style="dashed"];
 	"Postgres"   -> "Postgres95"        [style="dashed"];
 	"Postgres95" -> "PostgreSQL 6.0"    [style="dashed"];
+
+	/* Historic & Data Warehouse Forks */
+	"Illustra"        [color="grey"];
+	"Netezza"         [color="grey"];
+	"ParAccel"        [color="grey"];
+	"Amazon Redshift" [color="#8C1104"];
+	"Postgres"        -> "Illustra";
+	"PostgreSQL 7.2"  -> "Netezza";
+	"PostgreSQL 8.0"  -> "ParAccel";
+	"ParAccel"        -> "Amazon Redshift";
 
 	/* PostgreSQL GA - EOL */
 	"PostgreSQL 6.0" [color="lightblue"];
@@ -186,19 +207,24 @@ digraph postgres_history_graph {
 	"Postgres Pro 16" -> "Postgres Pro 17";
 	"PostgreSQL 17"   -> "Postgres Pro 17";
 
-	/* openGauss - Huawei, based on PostgreSQL 9.2.4 */
+	/* GaussDB / openGauss - Huawei & partners */
+	"GaussDB"       [color="#C7000B"];
 	"openGauss 1.0" [color="#C7000B"];
 	"openGauss 2.0" [color="#C7000B"];
 	"openGauss 3.0" [color="#C7000B"];
 	"openGauss 5.0" [color="#C7000B"];
 	"openGauss 6.0" [color="#C7000B"];
 	"openGauss 7.0" [color="#C7000B"];
-	"PostgreSQL 9.2" -> "openGauss 1.0";
-	"openGauss 1.0"  -> "openGauss 2.0";
-	"openGauss 2.0"  -> "openGauss 3.0";
-	"openGauss 3.0"  -> "openGauss 5.0"; // 4.0 skipped
-	"openGauss 5.0"  -> "openGauss 6.0";
-	"openGauss 6.0"  -> "openGauss 7.0";
+	"Vastbase"      [color="#0066CC"];
+	"Postgres-XC 1.2" -> "GaussDB";
+	"GaussDB"         -> "openGauss 1.0";
+	"openGauss 1.0"   -> "openGauss 2.0";
+	"openGauss 2.0"   -> "openGauss 3.0";
+	"openGauss 3.0"   -> "openGauss 5.0"; // 4.0 skipped
+	"openGauss 5.0"   -> "openGauss 6.0";
+	"openGauss 6.0"   -> "openGauss 7.0";
+	"openGauss 3.0"   -> "Vastbase";
+	"openGauss 7.0"   -> "Vastbase" [color="grey"]; // rebase
 
 	/* Apache Cloudberry - fork of Greenplum 7 after Broadcom closed it */
 	"Cloudberry 1.0" [color="cyan4"];
@@ -229,4 +255,44 @@ digraph postgres_history_graph {
 	"Neon" [color="#00E599"];
 	"PostgreSQL 14" -> "Neon";
 	"PostgreSQL 17" -> "Neon" [color="grey"]; // tracks mainline
+
+	/* TBase / TDSQL - Tencent, based on Postgres-XL */
+	"TBase" [color="#00A4FF"];
+	"Postgres-XL 10" -> "TBase";
+
+	/* PolarDB for PostgreSQL - Alibaba */
+	"PolarDB" [color="#FF6A00"];
+	"PostgreSQL 11" -> "PolarDB";
+	"PostgreSQL 15" -> "PolarDB" [color="grey"]; // tracks mainline
+
+	/* Kingbase ES - China */
+	"Kingbase ES" [color="#003399"];
+	"PostgreSQL 9.6" -> "Kingbase ES";
+
+	/* Citus - distributed PostgreSQL (extension/fork) */
+	"Citus" [color="#0078D4"];
+	"PostgreSQL 9.5" -> "Citus";
+	"PostgreSQL 16"  -> "Citus" [color="grey"];
+
+	/* TimescaleDB - time-series PostgreSQL (extension/fork) */
+	"TimescaleDB" [color="#FDB813"];
+	"PostgreSQL 9.6" -> "TimescaleDB";
+	"PostgreSQL 17"  -> "TimescaleDB" [color="grey"];
+
+	/* AgensGraph - graph database based on PostgreSQL */
+	"AgensGraph" [color="#1B4F72"];
+	"PostgreSQL 10" -> "AgensGraph";
+
+	/* Hydra - columnar PostgreSQL for OLAP */
+	"Hydra" [color="#00C4CC"];
+	"PostgreSQL 13" -> "Hydra";
+
+	/* OrioleDB - storage engine for PostgreSQL */
+	"OrioleDB" [color="#F26122"];
+	"PostgreSQL 15" -> "OrioleDB";
+	"PostgreSQL 17" -> "OrioleDB" [color="grey"];
+
+	/* ParadeDB - search and analytics PostgreSQL (Elasticsearch alternative) */
+	"ParadeDB" [color="#121212"];
+	"PostgreSQL 16" -> "ParadeDB";
 }
