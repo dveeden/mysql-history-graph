@@ -1,0 +1,232 @@
+digraph postgres_history_graph {
+    /* vim: tabstop=4
+
+	   Standards:
+	   Non-GA: 		                    dashed
+	   Abandoned / No public release: 	dotted
+	   PostgreSQL: 	                    supported=#336791, EOL=lightblue
+	   Greenplum:                       darkgreen
+	   Postgres-XC:                     purple4
+	   Postgres-XL:                     orchid4
+	   EDB Postgres Advanced Server:    red3
+	   Postgres Pro:                    brown
+	   openGauss:                       #C7000B
+	   Apache Cloudberry:               cyan4
+	   YugabyteDB:                      orange3
+	   Amazon Aurora PostgreSQL:        #FF9900
+	   Google AlloyDB:                  #4285F4
+	   Neon:                            #00E599
+	*/
+
+	nodesep=0.5;
+	ranksep=0.25;
+
+	/* Predecessors (Berkeley) */
+	"Ingres"     [color="grey", style="dotted"];
+	"Postgres"   [color="grey", style="dotted"];
+	"Postgres95" [color="grey", style="dotted"];
+	"Ingres"     -> "Postgres"          [style="dashed"];
+	"Postgres"   -> "Postgres95"        [style="dashed"];
+	"Postgres95" -> "PostgreSQL 6.0"    [style="dashed"];
+
+	/* PostgreSQL GA - EOL */
+	"PostgreSQL 6.0" [color="lightblue"];
+	"PostgreSQL 6.1" [color="lightblue"];
+	"PostgreSQL 6.2" [color="lightblue"];
+	"PostgreSQL 6.3" [color="lightblue"];
+	"PostgreSQL 6.4" [color="lightblue"];
+	"PostgreSQL 6.5" [color="lightblue"];
+	"PostgreSQL 7.0" [color="lightblue"];
+	"PostgreSQL 7.1" [color="lightblue"];
+	"PostgreSQL 7.2" [color="lightblue"];
+	"PostgreSQL 7.3" [color="lightblue"];
+	"PostgreSQL 7.4" [color="lightblue"];
+	"PostgreSQL 8.0" [color="lightblue"];
+	"PostgreSQL 8.1" [color="lightblue"];
+	"PostgreSQL 8.2" [color="lightblue"];
+	"PostgreSQL 8.3" [color="lightblue"];
+	"PostgreSQL 8.4" [color="lightblue"];
+	"PostgreSQL 9.0" [color="lightblue"];
+	"PostgreSQL 9.1" [color="lightblue"];
+	"PostgreSQL 9.2" [color="lightblue"];
+	"PostgreSQL 9.3" [color="lightblue"];
+	"PostgreSQL 9.4" [color="lightblue"];
+	"PostgreSQL 9.5" [color="lightblue"];
+	"PostgreSQL 9.6" [color="lightblue"];
+	"PostgreSQL 10"  [color="lightblue"];
+	"PostgreSQL 11"  [color="lightblue"];
+	"PostgreSQL 12"  [color="lightblue"];
+	"PostgreSQL 13"  [color="lightblue"];
+
+	/* PostgreSQL GA - supported (5-year policy) */
+	"PostgreSQL 14"  [color="#336791"];
+	"PostgreSQL 15"  [color="#336791"];
+	"PostgreSQL 16"  [color="#336791"];
+	"PostgreSQL 17"  [color="#336791"];
+	"PostgreSQL 18"  [color="#336791"];
+
+	/* PostgreSQL - in development */
+	"PostgreSQL 19"  [color="#336791", style="dashed"];
+
+	"PostgreSQL 6.0" -> "PostgreSQL 6.1";
+	"PostgreSQL 6.1" -> "PostgreSQL 6.2";
+	"PostgreSQL 6.2" -> "PostgreSQL 6.3";
+	"PostgreSQL 6.3" -> "PostgreSQL 6.4";
+	"PostgreSQL 6.4" -> "PostgreSQL 6.5";
+	"PostgreSQL 6.5" -> "PostgreSQL 7.0";
+	"PostgreSQL 7.0" -> "PostgreSQL 7.1";
+	"PostgreSQL 7.1" -> "PostgreSQL 7.2";
+	"PostgreSQL 7.2" -> "PostgreSQL 7.3";
+	"PostgreSQL 7.3" -> "PostgreSQL 7.4";
+	"PostgreSQL 7.4" -> "PostgreSQL 8.0";
+	"PostgreSQL 8.0" -> "PostgreSQL 8.1";
+	"PostgreSQL 8.1" -> "PostgreSQL 8.2";
+	"PostgreSQL 8.2" -> "PostgreSQL 8.3";
+	"PostgreSQL 8.3" -> "PostgreSQL 8.4";
+	"PostgreSQL 8.4" -> "PostgreSQL 9.0";
+	"PostgreSQL 9.0" -> "PostgreSQL 9.1";
+	"PostgreSQL 9.1" -> "PostgreSQL 9.2";
+	"PostgreSQL 9.2" -> "PostgreSQL 9.3";
+	"PostgreSQL 9.3" -> "PostgreSQL 9.4";
+	"PostgreSQL 9.4" -> "PostgreSQL 9.5";
+	"PostgreSQL 9.5" -> "PostgreSQL 9.6";
+	"PostgreSQL 9.6" -> "PostgreSQL 10";
+	"PostgreSQL 10"  -> "PostgreSQL 11";
+	"PostgreSQL 11"  -> "PostgreSQL 12";
+	"PostgreSQL 12"  -> "PostgreSQL 13";
+	"PostgreSQL 13"  -> "PostgreSQL 14";
+	"PostgreSQL 14"  -> "PostgreSQL 15";
+	"PostgreSQL 15"  -> "PostgreSQL 16";
+	"PostgreSQL 16"  -> "PostgreSQL 17";
+	"PostgreSQL 17"  -> "PostgreSQL 18";
+	"PostgreSQL 18"  -> "PostgreSQL 19" [style="dashed"];
+
+	/* Greenplum (forked from PostgreSQL 8.2; closed-sourced by Broadcom 2024) */
+	"Greenplum 4" [color="darkgreen"];
+	"Greenplum 5" [color="darkgreen"];
+	"Greenplum 6" [color="darkgreen"];
+	"Greenplum 7" [color="darkgreen"];
+	"PostgreSQL 8.2" -> "Greenplum 4";
+	"Greenplum 4"    -> "Greenplum 5";
+	"PostgreSQL 8.3" -> "Greenplum 5" [color="grey"]; // rebase
+	"Greenplum 5"    -> "Greenplum 6";
+	"PostgreSQL 9.4" -> "Greenplum 6" [color="grey"]; // rebase
+	"Greenplum 6"    -> "Greenplum 7";
+	"PostgreSQL 12"  -> "Greenplum 7" [color="grey"]; // rebase
+
+	/* Postgres-XC - eXtensible Cluster (abandoned ~2014) */
+	"Postgres-XC 1.0" [color="purple4"];
+	"Postgres-XC 1.1" [color="purple4"];
+	"Postgres-XC 1.2" [color="purple4"];
+	"PostgreSQL 9.1"  -> "Postgres-XC 1.0";
+	"Postgres-XC 1.0" -> "Postgres-XC 1.1";
+	"Postgres-XC 1.1" -> "Postgres-XC 1.2";
+
+	/* Postgres-XL - descendant of Postgres-XC + Stado */
+	"Postgres-XL 9.2" [color="orchid4"];
+	"Postgres-XL 9.5" [color="orchid4"];
+	"Postgres-XL 10"  [color="orchid4"];
+	"Postgres-XC 1.2" -> "Postgres-XL 9.2";
+	"PostgreSQL 9.2"  -> "Postgres-XL 9.2";
+	"Postgres-XL 9.2" -> "Postgres-XL 9.5";
+	"PostgreSQL 9.5"  -> "Postgres-XL 9.5";
+	"Postgres-XL 9.5" -> "Postgres-XL 10";
+	"PostgreSQL 10"   -> "Postgres-XL 10";
+
+	/* EDB Postgres Advanced Server (EPAS) - proprietary, Oracle compatibility */
+	"EPAS 10" [color="red3"];
+	"EPAS 11" [color="red3"];
+	"EPAS 12" [color="red3"];
+	"EPAS 13" [color="red3"];
+	"EPAS 14" [color="red3"];
+	"EPAS 15" [color="red3"];
+	"EPAS 16" [color="red3"];
+	"EPAS 17" [color="red3"];
+	"EPAS 18" [color="red3"];
+	"PostgreSQL 10" -> "EPAS 10";
+	"EPAS 10"       -> "EPAS 11";
+	"PostgreSQL 11" -> "EPAS 11";
+	"EPAS 11"       -> "EPAS 12";
+	"PostgreSQL 12" -> "EPAS 12";
+	"EPAS 12"       -> "EPAS 13";
+	"PostgreSQL 13" -> "EPAS 13";
+	"EPAS 13"       -> "EPAS 14";
+	"PostgreSQL 14" -> "EPAS 14";
+	"EPAS 14"       -> "EPAS 15";
+	"PostgreSQL 15" -> "EPAS 15";
+	"EPAS 15"       -> "EPAS 16";
+	"PostgreSQL 16" -> "EPAS 16";
+	"EPAS 16"       -> "EPAS 17";
+	"PostgreSQL 17" -> "EPAS 17";
+	"EPAS 17"       -> "EPAS 18";
+	"PostgreSQL 18" -> "EPAS 18";
+
+	/* Postgres Pro - Postgres Professional (RU), proprietary distribution */
+	"Postgres Pro 10" [color="brown"];
+	"Postgres Pro 11" [color="brown"];
+	"Postgres Pro 12" [color="brown"];
+	"Postgres Pro 13" [color="brown"];
+	"Postgres Pro 14" [color="brown"];
+	"Postgres Pro 15" [color="brown"];
+	"Postgres Pro 16" [color="brown"];
+	"Postgres Pro 17" [color="brown"];
+	"PostgreSQL 10"   -> "Postgres Pro 10";
+	"Postgres Pro 10" -> "Postgres Pro 11";
+	"PostgreSQL 11"   -> "Postgres Pro 11";
+	"Postgres Pro 11" -> "Postgres Pro 12";
+	"PostgreSQL 12"   -> "Postgres Pro 12";
+	"Postgres Pro 12" -> "Postgres Pro 13";
+	"PostgreSQL 13"   -> "Postgres Pro 13";
+	"Postgres Pro 13" -> "Postgres Pro 14";
+	"PostgreSQL 14"   -> "Postgres Pro 14";
+	"Postgres Pro 14" -> "Postgres Pro 15";
+	"PostgreSQL 15"   -> "Postgres Pro 15";
+	"Postgres Pro 15" -> "Postgres Pro 16";
+	"PostgreSQL 16"   -> "Postgres Pro 16";
+	"Postgres Pro 16" -> "Postgres Pro 17";
+	"PostgreSQL 17"   -> "Postgres Pro 17";
+
+	/* openGauss - Huawei, based on PostgreSQL 9.2.4 */
+	"openGauss 1.0" [color="#C7000B"];
+	"openGauss 2.0" [color="#C7000B"];
+	"openGauss 3.0" [color="#C7000B"];
+	"openGauss 5.0" [color="#C7000B"];
+	"openGauss 6.0" [color="#C7000B"];
+	"openGauss 7.0" [color="#C7000B"];
+	"PostgreSQL 9.2" -> "openGauss 1.0";
+	"openGauss 1.0"  -> "openGauss 2.0";
+	"openGauss 2.0"  -> "openGauss 3.0";
+	"openGauss 3.0"  -> "openGauss 5.0"; // 4.0 skipped
+	"openGauss 5.0"  -> "openGauss 6.0";
+	"openGauss 6.0"  -> "openGauss 7.0";
+
+	/* Apache Cloudberry - fork of Greenplum 7 after Broadcom closed it */
+	"Cloudberry 1.0" [color="cyan4"];
+	"Cloudberry 2.0" [color="cyan4"];
+	"Greenplum 7"    -> "Cloudberry 1.0";
+	"Cloudberry 1.0" -> "Cloudberry 2.0";
+
+	/* YugabyteDB - distributed SQL reusing the PostgreSQL query layer */
+	"YugabyteDB 2.0"  [color="orange3"];
+	"YugabyteDB 2.20" [color="orange3"]; // LTS
+	"YugabyteDB 2025" [color="orange3"];
+	"PostgreSQL 11"   -> "YugabyteDB 2.0";
+	"YugabyteDB 2.0"  -> "YugabyteDB 2.20";
+	"YugabyteDB 2.20" -> "YugabyteDB 2025";
+	"PostgreSQL 15"   -> "YugabyteDB 2025" [color="grey"]; // query-layer rebase
+
+	/* Amazon Aurora PostgreSQL - managed, custom storage layer */
+	"Aurora PostgreSQL" [color="#FF9900"];
+	"PostgreSQL 9.6" -> "Aurora PostgreSQL"; // launched 2017 on PG 9.6
+	"PostgreSQL 17"  -> "Aurora PostgreSQL" [color="grey"]; // tracks mainline
+
+	/* Google AlloyDB for PostgreSQL */
+	"AlloyDB" [color="#4285F4"];
+	"PostgreSQL 14" -> "AlloyDB"; // launched 2022 on PG 14
+	"PostgreSQL 16" -> "AlloyDB" [color="grey"]; // tracks mainline
+
+	/* Neon - serverless PostgreSQL with disaggregated storage */
+	"Neon" [color="#00E599"];
+	"PostgreSQL 14" -> "Neon";
+	"PostgreSQL 17" -> "Neon" [color="grey"]; // tracks mainline
+}
