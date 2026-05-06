@@ -154,33 +154,33 @@ digraph postgres_history_graph {
 	"Postgres-XL 9.5" -> "Postgres-XL 10";
 	"PostgreSQL 10"   -> "Postgres-XL 10";
 
-	/* EDB Postgres Advanced Server (EPAS) - proprietary, Oracle compatibility */
-	"EPAS 10" [color="red3"];
-	"EPAS 11" [color="red3"];
-	"EPAS 12" [color="red3"];
-	"EPAS 13" [color="red3"];
-	"EPAS 14" [color="red3"];
-	"EPAS 15" [color="red3"];
-	"EPAS 16" [color="red3"];
-	"EPAS 17" [color="red3"];
-	"EPAS 18" [color="red3"];
-	"PostgreSQL 10" -> "EPAS 10";
-	"EPAS 10"       -> "EPAS 11";
-	"PostgreSQL 11" -> "EPAS 11";
-	"EPAS 11"       -> "EPAS 12";
-	"PostgreSQL 12" -> "EPAS 12";
-	"EPAS 12"       -> "EPAS 13";
-	"PostgreSQL 13" -> "EPAS 13";
-	"EPAS 13"       -> "EPAS 14";
-	"PostgreSQL 14" -> "EPAS 14";
-	"EPAS 14"       -> "EPAS 15";
-	"PostgreSQL 15" -> "EPAS 15";
-	"EPAS 15"       -> "EPAS 16";
-	"PostgreSQL 16" -> "EPAS 16";
-	"EPAS 16"       -> "EPAS 17";
-	"PostgreSQL 17" -> "EPAS 17";
-	"EPAS 17"       -> "EPAS 18";
-	"PostgreSQL 18" -> "EPAS 18";
+	/* EDB Postgres Advanced Server - proprietary, Oracle compatibility */
+	"EDB 10" [color="red3"];
+	"EDB 11" [color="red3"];
+	"EDB 12" [color="red3"];
+	"EDB 13" [color="red3"];
+	"EDB 14" [color="red3"];
+	"EDB 15" [color="red3"];
+	"EDB 16" [color="red3"];
+	"EDB 17" [color="red3"];
+	"EDB 18" [color="red3"];
+	"PostgreSQL 10" -> "EDB 10";
+	"EDB 10"        -> "EDB 11";
+	"PostgreSQL 11" -> "EDB 11";
+	"EDB 11"        -> "EDB 12";
+	"PostgreSQL 12" -> "EDB 12";
+	"EDB 12"        -> "EDB 13";
+	"PostgreSQL 13" -> "EDB 13";
+	"EDB 13"        -> "EDB 14";
+	"PostgreSQL 14" -> "EDB 14";
+	"EDB 14"        -> "EDB 15";
+	"PostgreSQL 15" -> "EDB 15";
+	"EDB 15"        -> "EDB 16";
+	"PostgreSQL 16" -> "EDB 16";
+	"EDB 16"        -> "EDB 17";
+	"PostgreSQL 17" -> "EDB 17";
+	"EDB 17"        -> "EDB 18";
+	"PostgreSQL 18" -> "EDB 18";
 
 	/* Postgres Pro - Postgres Professional (RU), proprietary distribution */
 	"Postgres Pro 10" [color="brown"];
