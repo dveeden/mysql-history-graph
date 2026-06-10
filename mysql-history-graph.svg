@@ -1440,19 +1440,19 @@
 <!-- MariaDB 12.1&#45;&gt;MariaDB 12.2 -->
 <g id="edge111" class="edge">
 <title>MariaDB 12.1&#45;&gt;MariaDB 12.2</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1316.62,-107.68C1316.62,-105.78 1316.62,-103.8 1316.62,-101.79"/>
+<path fill="none" stroke="black" d="M1316.62,-107.68C1316.62,-105.78 1316.62,-103.8 1316.62,-101.79"/>
 <polygon fill="black" stroke="black" points="1320.12,-101.93 1316.62,-91.93 1313.12,-101.93 1320.12,-101.93"/>
 </g>
 <!-- MariaDB 12.3 -->
 <g id="node82" class="node">
 <title>MariaDB 12.3</title>
-<ellipse fill="none" stroke="blue" stroke-dasharray="5,2" cx="1316.62" cy="-18" rx="65.17" ry="18"/>
+<ellipse fill="none" stroke="blue" cx="1316.62" cy="-18" rx="65.17" ry="18"/>
 <text xml:space="preserve" text-anchor="middle" x="1316.62" y="-12.95" font-family="Times,serif" font-size="14.00">MariaDB 12.3</text>
 </g>
 <!-- MariaDB 12.2&#45;&gt;MariaDB 12.3 -->
 <g id="edge112" class="edge">
 <title>MariaDB 12.2&#45;&gt;MariaDB 12.3</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1316.62,-53.68C1316.62,-51.78 1316.62,-49.8 1316.62,-47.79"/>
+<path fill="none" stroke="black" d="M1316.62,-53.68C1316.62,-51.78 1316.62,-49.8 1316.62,-47.79"/>
 <polygon fill="black" stroke="black" points="1320.12,-47.93 1316.62,-37.93 1313.12,-47.93 1320.12,-47.93"/>
 </g>
 <!-- Percona Server 5.1&#45;&gt;MariaDB 5.1 -->
