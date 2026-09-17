@@ -339,9 +339,11 @@ digraph mysql_history_graph {
 	"RonDB 22.10" [color="#ffdf00"];
 	"RonDB 24.10" [color="#ffdf00"]
 	"RonDB 25.10" [color="#ffdf00", style="dashed"]
+	"RonDB 26.02" [color="#ffdf00", style="dashed"]
 	"RonDB 21.04" -> "RonDB 22.10";
 	"RonDB 22.10" -> "RonDB 24.10";
 	"RonDB 24.10" -> "RonDB 25.10" [style="dashed"];
+	"RonDB 25.10" -> "RonDB 26.02" [style="dashed"];
 	"MySQL Cluster 8.0" -> "RonDB 21.04";
 	"MySQL Cluster 8.0" -> "RonDB 22.10";
 	"MySQL Cluster 8.4" -> "RonDB 24.10";
