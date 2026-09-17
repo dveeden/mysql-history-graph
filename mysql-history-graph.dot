@@ -47,6 +47,7 @@ digraph mysql_history_graph {
 	"MySQL 9.5" [color="pink"];
 	"MySQL 9.6" [color="pink"];
 	"MySQL 9.7" [color="red"];
+	"MySQL 26.7" [color="pink"];
 	"MySQL 3.19" -> "MySQL 3.20";
 	"MySQL 3.20" -> "MySQL 3.21";
 	"MySQL 3.21" -> "MySQL 3.22";
@@ -73,6 +74,7 @@ digraph mysql_history_graph {
 	"MySQL 9.4" -> "MySQL 9.5";
 	"MySQL 9.5" -> "MySQL 9.6";
 	"MySQL 9.6" -> "MySQL 9.7";
+	"MySQL 9.7" -> "MySQL 26.7";
 
 	/* MySQL/Sun/Oracle non-GA */	
 	//
@@ -137,6 +139,7 @@ digraph mysql_history_graph {
 	"MySQL Cluster 9.5"  [color="pink"]
 	"MySQL Cluster 9.6"  [color="pink"]
 	"MySQL Cluster 9.7"  [color="pink"]
+	"MySQL Cluster 26.7"  [color="pink"]
 	"MySQL Cluster 7.6" -> "MySQL Cluster 8.0";
 	"MySQL 8.0" -> "MySQL Cluster 8.0";
 	"MySQL Cluster 8.0" -> "MySQL Cluster 8.1";
@@ -163,6 +166,8 @@ digraph mysql_history_graph {
 	"MySQL 9.6" -> "MySQL Cluster 9.6";
 	"MySQL Cluster 9.6" -> "MySQL Cluster 9.7";
 	"MySQL 9.7" -> "MySQL Cluster 9.7";
+	"MySQL Cluster 9.7" -> "MySQL Cluster 26.7";
+	"MySQL 26.7" -> "MySQL Cluster 26.7";
 
 	/*
 		MariaDB
@@ -200,6 +205,7 @@ digraph mysql_history_graph {
 	"MariaDB 12.1" [color="lightblue"];
 	"MariaDB 12.2" [color="lightblue"];
 	"MariaDB 12.3" [color="blue"];
+	"MariaDB 13.0" [color="lightblue"];
 
 	"MySQL 5.1" -> "MariaDB 5.1";
 	"Percona Server 5.1" -> "MariaDB 5.1" [color="grey"]; // XtraDB
@@ -248,6 +254,7 @@ digraph mysql_history_graph {
 	"MariaDB 12.0" -> "MariaDB 12.1";
 	"MariaDB 12.1" -> "MariaDB 12.2";
 	"MariaDB 12.2" -> "MariaDB 12.3";
+	"MariaDB 12.3" -> "MariaDB 13.0";
 
     /* InfiniDB */
     "InfiniDB 1.5" [color="steelblue"];
@@ -296,6 +303,7 @@ digraph mysql_history_graph {
 	"Percona Server 8.2" [color="orange3"];
 	"Percona Server 8.3" [color="orange3"];
 	"Percona Server 8.4" [color="orange3"];
+	"Percona Server 9.7" [color="orange3"];
 	"MySQL 5.0" -> "Percona Server 5.0";
 	"MySQL 5.1" -> "Percona Server 5.1";
 	"Percona Server 5.0" -> "Percona Server 5.1";
@@ -316,6 +324,8 @@ digraph mysql_history_graph {
 	"MySQL 8.3" -> "Percona Server 8.3";
 	"Percona Server 8.3" -> "Percona Server 8.4";
 	"MySQL 8.4" -> "Percona Server 8.4";
+	"Percona Server 8.4" -> "Percona Server 9.7";
+	"MySQL 9.7" -> "Percona Server 9.7";
 
 	/* Drizzle */
 	"Drizzle 7.0" [color="blue4"];
@@ -370,7 +380,22 @@ digraph mysql_history_graph {
 	"VillageSQL 0.0.1" [color="#cc66ff"];
 	"VillageSQL 0.0.2" [color="#cc66ff"];
 	"VillageSQL 0.0.3" [color="#cc66ff"];
+	"VillageSQL 0.0.4" [color="#cc66ff"];
+	"VillageSQL 0.0.5" [color="#cc66ff"];
+	"VillageSQL 0.0.6" [color="#cc66ff"];
+
+	/* https://github.com/villagesql/villagesql-server/releases/tag/release%2F0.0.6
+       "0.0.6 ships three server codebases:
+        mysql-8.4 tracking MySQL 8.4,
+        mysql-9.7 tracking MySQL 9.7, and
+        percona-8.4 tracking Percona Server 8.4."
+
+		Not sure it this should lead to new nodes and/or new connections.
+    */
 	"MySQL 8.4" -> "VillageSQL 0.0.1";
 	"VillageSQL 0.0.1" -> "VillageSQL 0.0.2";
 	"VillageSQL 0.0.2" -> "VillageSQL 0.0.3";
+	"VillageSQL 0.0.3" -> "VillageSQL 0.0.4";
+	"VillageSQL 0.0.4" -> "VillageSQL 0.0.5";
+	"VillageSQL 0.0.5" -> "VillageSQL 0.0.6";
 }
