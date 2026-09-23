@@ -378,26 +378,28 @@ digraph mysql_history_graph {
 	"TenDB 5.7" [color="#006eff"];
 	"Percona Server 5.7" -> "TenDB 5.7";
 
-	/* VillageSQL */
+	/* VillageSQL for MySQL 8.4 */
 	"VillageSQL 0.0.1" [color="#cc66ff"];
 	"VillageSQL 0.0.2" [color="#cc66ff"];
 	"VillageSQL 0.0.3" [color="#cc66ff"];
 	"VillageSQL 0.0.4" [color="#cc66ff"];
 	"VillageSQL 0.0.5" [color="#cc66ff"];
-	"VillageSQL 0.0.6" [color="#cc66ff"];
+	"VillageSQL 0.0.6 (MySQL 8.4)" [color="#cc66ff"];
 
-	/* https://github.com/villagesql/villagesql-server/releases/tag/release%2F0.0.6
-       "0.0.6 ships three server codebases:
-        mysql-8.4 tracking MySQL 8.4,
-        mysql-9.7 tracking MySQL 9.7, and
-        percona-8.4 tracking Percona Server 8.4."
-
-		Not sure it this should lead to new nodes and/or new connections.
-    */
 	"MySQL 8.4" -> "VillageSQL 0.0.1";
 	"VillageSQL 0.0.1" -> "VillageSQL 0.0.2";
 	"VillageSQL 0.0.2" -> "VillageSQL 0.0.3";
 	"VillageSQL 0.0.3" -> "VillageSQL 0.0.4";
 	"VillageSQL 0.0.4" -> "VillageSQL 0.0.5";
-	"VillageSQL 0.0.5" -> "VillageSQL 0.0.6";
+	"VillageSQL 0.0.5" -> "VillageSQL 0.0.6 (MySQL 8.4)";
+	"VillageSQL 0.0.5" -> "VillageSQL 0.0.6 (MySQL 9.7)";
+	"VillageSQL 0.0.5" -> "VillageSQL 0.0.6 (Percona Server 8.4)";
+
+	/* VillageSQL for MySQL 9.7 */
+	"VillageSQL 0.0.6 (MySQL 9.7)" [color="#cc66ff"];
+	"MySQL 9.7" -> "VillageSQL 0.0.6 (MySQL 9.7)";
+
+	/* VillageSQL for Percona Server 8.4 */
+	"VillageSQL 0.0.6 (Percona Server 8.4)" [color="#cc66ff"];
+	"Percona Server 8.4" -> "VillageSQL 0.0.6 (Percona Server 8.4)";
 }
