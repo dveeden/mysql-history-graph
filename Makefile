@@ -1,4 +1,4 @@
-SOURCES=mysql-history-graph.dot mysql-only-history.dot innodb-history-graph.dot mysql-bug.dot
+SOURCES=mysql-history-graph.dot mysql-only-history.dot innodb-history-graph.dot mysql-bug.dot mysql-history-graph-generated.dot
 SVGGRAPHS=$(SOURCES:.dot=.svg)
 PNGGRAPHS=$(SOURCES:.dot=.png)
 
@@ -12,3 +12,6 @@ clean:
 
 %.svg: %.dot
 	dot -Tsvg -o $@ $<
+
+mysql-history-graph-generated.dot:
+	go run ./cmd/gendot/main.go

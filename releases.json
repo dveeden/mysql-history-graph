@@ -1,0 +1,1282 @@
+[
+  {
+    "name": "MySQL 3.19",
+    "vendor": "MySQL",
+    "version": "3.19",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 3.20",
+    "vendor": "MySQL",
+    "version": "3.20",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 3.21",
+    "vendor": "MySQL",
+    "version": "3.21",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 3.22",
+    "vendor": "MySQL",
+    "version": "3.22",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 3.23",
+    "vendor": "MySQL",
+    "version": "3.23",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 4.0",
+    "vendor": "MySQL",
+    "version": "4.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 4.1",
+    "vendor": "MySQL",
+    "version": "4.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 5.0",
+    "vendor": "MySQL",
+    "version": "5.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 5.1",
+    "vendor": "MySQL",
+    "version": "5.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 5.5",
+    "vendor": "MySQL",
+    "version": "5.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 5.6",
+    "vendor": "MySQL",
+    "version": "5.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 5.7",
+    "vendor": "MySQL",
+    "version": "5.7",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 8.0",
+    "vendor": "MySQL",
+    "version": "8.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 8.1",
+    "vendor": "MySQL",
+    "version": "8.1",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 8.2",
+    "vendor": "MySQL",
+    "version": "8.2",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 8.3",
+    "vendor": "MySQL",
+    "version": "8.3",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 8.4",
+    "vendor": "MySQL",
+    "version": "8.4",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.0",
+    "vendor": "MySQL",
+    "version": "9.0",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.1",
+    "vendor": "MySQL",
+    "version": "9.1",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.2",
+    "vendor": "MySQL",
+    "version": "9.2",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.3",
+    "vendor": "MySQL",
+    "version": "9.3",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.4",
+    "vendor": "MySQL",
+    "version": "9.4",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.5",
+    "vendor": "MySQL",
+    "version": "9.5",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.6",
+    "vendor": "MySQL",
+    "version": "9.6",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 9.7",
+    "vendor": "MySQL",
+    "version": "9.7",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 26.7",
+    "vendor": "MySQL",
+    "version": "26.7",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 1.0",
+    "vendor": "MySQL",
+    "version": "1.0",
+    "status": "Limited",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": "Released to a limited group of four people. Source: https://dl.acm.org/doi/fullHtml/10.5555/328036.328041"
+  },
+  {
+    "name": "MySQL 3.11.1",
+    "vendor": "MySQL",
+    "version": "3.11.1",
+    "status": "Limited",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": "Released to the public as a binary distribution for Solaris. Source: https://dl.acm.org/doi/fullHtml/10.5555/328036.328041"
+  },
+  {
+    "name": "MySQL 5.2",
+    "vendor": "MySQL",
+    "version": "5.2",
+    "status": "Abandoned",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 5.4",
+    "vendor": "MySQL",
+    "version": "5.4",
+    "status": "Abandoned",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL 6.0",
+    "vendor": "MySQL",
+    "version": "6.0",
+    "status": "Abandoned",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 6.2",
+    "vendor": "MySQL Cluster",
+    "version": "6.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 6.3",
+    "vendor": "MySQL Cluster",
+    "version": "6.3",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.0",
+    "vendor": "MySQL Cluster",
+    "version": "7.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.1",
+    "vendor": "MySQL Cluster",
+    "version": "7.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.2",
+    "vendor": "MySQL Cluster",
+    "version": "7.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.3",
+    "vendor": "MySQL Cluster",
+    "version": "7.3",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.4",
+    "vendor": "MySQL Cluster",
+    "version": "7.4",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.5",
+    "vendor": "MySQL Cluster",
+    "version": "7.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 7.6",
+    "vendor": "MySQL Cluster",
+    "version": "7.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 8.0",
+    "vendor": "MySQL Cluster",
+    "version": "8.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 8.1",
+    "vendor": "MySQL Cluster",
+    "version": "8.1",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 8.2",
+    "vendor": "MySQL Cluster",
+    "version": "8.2",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 8.3",
+    "vendor": "MySQL Cluster",
+    "version": "8.3",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 8.4",
+    "vendor": "MySQL Cluster",
+    "version": "8.4",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.0",
+    "vendor": "MySQL Cluster",
+    "version": "9.0",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.1",
+    "vendor": "MySQL Cluster",
+    "version": "9.1",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.2",
+    "vendor": "MySQL Cluster",
+    "version": "9.2",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.3",
+    "vendor": "MySQL Cluster",
+    "version": "9.3",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.4",
+    "vendor": "MySQL Cluster",
+    "version": "9.4",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.5",
+    "vendor": "MySQL Cluster",
+    "version": "9.5",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.6",
+    "vendor": "MySQL Cluster",
+    "version": "9.6",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 9.7",
+    "vendor": "MySQL Cluster",
+    "version": "9.7",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MySQL Cluster 26.7",
+    "vendor": "MySQL Cluster",
+    "version": "26.7",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 5.1",
+    "vendor": "MariaDB",
+    "version": "5.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 5.2",
+    "vendor": "MariaDB",
+    "version": "5.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 5.3",
+    "vendor": "MariaDB",
+    "version": "5.3",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 5.5",
+    "vendor": "MariaDB",
+    "version": "5.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.0",
+    "vendor": "MariaDB",
+    "version": "10.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.1",
+    "vendor": "MariaDB",
+    "version": "10.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.2",
+    "vendor": "MariaDB",
+    "version": "10.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.3",
+    "vendor": "MariaDB",
+    "version": "10.3",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": "In MariaDB 10.3.7 and later, the InnoDB implementation has diverged substantially from the InnoDB in MySQL (https://mariadb.com/kb/en/innodb-versions/)"
+  },
+  {
+    "name": "MariaDB 10.4",
+    "vendor": "MariaDB",
+    "version": "10.4",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.5",
+    "vendor": "MariaDB",
+    "version": "10.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.6",
+    "vendor": "MariaDB",
+    "version": "10.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.7",
+    "vendor": "MariaDB",
+    "version": "10.7",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.8",
+    "vendor": "MariaDB",
+    "version": "10.8",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.9",
+    "vendor": "MariaDB",
+    "version": "10.9",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.10",
+    "vendor": "MariaDB",
+    "version": "10.10",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 10.11",
+    "vendor": "MariaDB",
+    "version": "10.11",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.0",
+    "vendor": "MariaDB",
+    "version": "11.0",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.1",
+    "vendor": "MariaDB",
+    "version": "11.1",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.2",
+    "vendor": "MariaDB",
+    "version": "11.2",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.3",
+    "vendor": "MariaDB",
+    "version": "11.3",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.4",
+    "vendor": "MariaDB",
+    "version": "11.4",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.5",
+    "vendor": "MariaDB",
+    "version": "11.5",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.6",
+    "vendor": "MariaDB",
+    "version": "11.6",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.7",
+    "vendor": "MariaDB",
+    "version": "11.7",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 11.8",
+    "vendor": "MariaDB",
+    "version": "11.8",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 12.0",
+    "vendor": "MariaDB",
+    "version": "12.0",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 12.1",
+    "vendor": "MariaDB",
+    "version": "12.1",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 12.2",
+    "vendor": "MariaDB",
+    "version": "12.2",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 12.3",
+    "vendor": "MariaDB",
+    "version": "12.3",
+    "status": "LTS",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB 13.0",
+    "vendor": "MariaDB",
+    "version": "13.0",
+    "status": "Rolling",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 1.5",
+    "vendor": "InfiniDB",
+    "version": "1.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 2.0",
+    "vendor": "InfiniDB",
+    "version": "2.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 2.2",
+    "vendor": "InfiniDB",
+    "version": "2.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 3.5",
+    "vendor": "InfiniDB",
+    "version": "3.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 3.6",
+    "vendor": "InfiniDB",
+    "version": "3.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 4.0",
+    "vendor": "InfiniDB",
+    "version": "4.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "InfiniDB 4.5",
+    "vendor": "InfiniDB",
+    "version": "4.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB ColumnStore 1.0",
+    "vendor": "MariaDB ColumnStore",
+    "version": "1.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB ColumnStore 1.1",
+    "vendor": "MariaDB ColumnStore",
+    "version": "1.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB ColumnStore 1.2",
+    "vendor": "MariaDB ColumnStore",
+    "version": "1.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "MariaDB ColumnStore 1.4",
+    "vendor": "MariaDB ColumnStore",
+    "version": "1.4",
+    "status": "Enterprise",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": "Enterprise only, no longer a fork. Released as part of MariaDB Enterprise 10.4; codebase still separate, expected to merge for 10.5."
+  },
+  {
+    "name": "Percona Server 5.0",
+    "vendor": "Percona Server",
+    "version": "5.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 5.1",
+    "vendor": "Percona Server",
+    "version": "5.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 5.5",
+    "vendor": "Percona Server",
+    "version": "5.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 5.6",
+    "vendor": "Percona Server",
+    "version": "5.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 5.7",
+    "vendor": "Percona Server",
+    "version": "5.7",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 8.0",
+    "vendor": "Percona Server",
+    "version": "8.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 8.1",
+    "vendor": "Percona Server",
+    "version": "8.1",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 8.2",
+    "vendor": "Percona Server",
+    "version": "8.2",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 8.3",
+    "vendor": "Percona Server",
+    "version": "8.3",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 8.4",
+    "vendor": "Percona Server",
+    "version": "8.4",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Percona Server 9.7",
+    "vendor": "Percona Server",
+    "version": "9.7",
+    "status": "Innovation",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Drizzle 7.0",
+    "vendor": "Drizzle",
+    "version": "7.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Drizzle 7.1",
+    "vendor": "Drizzle",
+    "version": "7.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Drizzle 7.2",
+    "vendor": "Drizzle",
+    "version": "7.2",
+    "status": "Development",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "RonDB 21.04",
+    "vendor": "RonDB",
+    "version": "21.04",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "RonDB 22.10",
+    "vendor": "RonDB",
+    "version": "22.10",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "RonDB 24.10",
+    "vendor": "RonDB",
+    "version": "24.10",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "RonDB 25.10",
+    "vendor": "RonDB",
+    "version": "25.10",
+    "status": "Development",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "RonDB 26.02",
+    "vendor": "RonDB",
+    "version": "26.02",
+    "status": "Development",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "WebScaleSQL",
+    "vendor": "WebScaleSQL",
+    "version": "",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Facebook MySQL 5.6",
+    "vendor": "Facebook MySQL",
+    "version": "5.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "Facebook MySQL 8.0",
+    "vendor": "Facebook MySQL",
+    "version": "8.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "AliSQL 5.6",
+    "vendor": "AliSQL",
+    "version": "5.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "AliSQL 8.0",
+    "vendor": "AliSQL",
+    "version": "8.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "GreatSQL 8.0",
+    "vendor": "GreatSQL",
+    "version": "8.0",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "GreatSQL 8.4",
+    "vendor": "GreatSQL",
+    "version": "8.4",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "TenDB 5.7",
+    "vendor": "TenDB",
+    "version": "5.7",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "VillageSQL 0.0.1",
+    "vendor": "VillageSQL",
+    "version": "0.0.1",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "VillageSQL 0.0.2",
+    "vendor": "VillageSQL",
+    "version": "0.0.2",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "VillageSQL 0.0.3",
+    "vendor": "VillageSQL",
+    "version": "0.0.3",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "VillageSQL 0.0.4",
+    "vendor": "VillageSQL",
+    "version": "0.0.4",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "VillageSQL 0.0.5",
+    "vendor": "VillageSQL",
+    "version": "0.0.5",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "name": "VillageSQL 0.0.6",
+    "vendor": "VillageSQL",
+    "version": "0.0.6",
+    "status": "GA",
+    "release_date": "",
+    "eol_date": "",
+    "link": "https://github.com/villagesql/villagesql-server/releases/tag/release%2F0.0.6",
+    "notes": "Ships three server codebases: mysql-8.4 tracking MySQL 8.4, mysql-9.7 tracking MySQL 9.7, and percona-8.4 tracking Percona Server 8.4."
+  }
+]

@@ -1,0 +1,1113 @@
+{
+  "link_styles": {
+    "derived": {
+      "color": "",
+      "style": "",
+      "description": "Release is based on the other release"
+    },
+    "contribution": {
+      "color": "grey",
+      "style": "",
+      "description": "Code/features contributed from the other release"
+    },
+    "non-ga": {
+      "color": "",
+      "style": "dashed",
+      "description": "Involves a non-GA release"
+    }
+  },
+  "links": [
+    {
+      "from": "MySQL 3.19",
+      "to": "MySQL 3.20",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 3.20",
+      "to": "MySQL 3.21",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 3.21",
+      "to": "MySQL 3.22",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 3.22",
+      "to": "MySQL 3.23",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 3.23",
+      "to": "MySQL 4.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 4.0",
+      "to": "MySQL 4.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 4.1",
+      "to": "MySQL 5.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.0",
+      "to": "MySQL 5.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 6.0",
+      "to": "MySQL 5.5",
+      "status": "contribution",
+      "notes": "Optimizer improvements"
+    },
+    {
+      "from": "MySQL 5.4",
+      "to": "MySQL 5.5",
+      "status": "contribution",
+      "notes": "InnoDB Scalability"
+    },
+    {
+      "from": "MySQL 5.5",
+      "to": "MySQL 5.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.6",
+      "to": "MySQL 5.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.7",
+      "to": "MySQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.6",
+      "to": "MySQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.0",
+      "to": "MySQL 8.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.1",
+      "to": "MySQL 8.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.2",
+      "to": "MySQL 8.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.3",
+      "to": "MySQL 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.4",
+      "to": "MySQL 9.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.0",
+      "to": "MySQL 9.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.1",
+      "to": "MySQL 9.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.2",
+      "to": "MySQL 9.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.3",
+      "to": "MySQL 9.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.4",
+      "to": "MySQL 9.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.5",
+      "to": "MySQL 9.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.6",
+      "to": "MySQL 9.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.7",
+      "to": "MySQL 26.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 1.0",
+      "to": "MySQL 3.11.1",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 3.11.1",
+      "to": "MySQL 3.19",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MySQL 5.2",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MySQL 6.0",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.2",
+      "to": "MySQL 5.4",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.7",
+      "to": "MySQL 8.0",
+      "status": "contribution",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MySQL Cluster 6.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MySQL Cluster 6.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 6.2",
+      "to": "MySQL Cluster 6.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MySQL Cluster 7.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 6.3",
+      "to": "MySQL Cluster 7.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MySQL Cluster 7.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.0",
+      "to": "MySQL Cluster 7.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.5",
+      "to": "MySQL Cluster 7.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.1",
+      "to": "MySQL Cluster 7.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.6",
+      "to": "MySQL Cluster 7.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.2",
+      "to": "MySQL Cluster 7.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.3",
+      "to": "MySQL Cluster 7.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.7",
+      "to": "MySQL Cluster 7.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.4",
+      "to": "MySQL Cluster 7.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.5",
+      "to": "MySQL Cluster 7.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 7.6",
+      "to": "MySQL Cluster 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.0",
+      "to": "MySQL Cluster 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.0",
+      "to": "MySQL Cluster 8.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.1",
+      "to": "MySQL Cluster 8.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.1",
+      "to": "MySQL Cluster 8.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.2",
+      "to": "MySQL Cluster 8.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.2",
+      "to": "MySQL Cluster 8.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.3",
+      "to": "MySQL Cluster 8.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.3",
+      "to": "MySQL Cluster 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.4",
+      "to": "MySQL Cluster 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.4",
+      "to": "MySQL Cluster 9.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.0",
+      "to": "MySQL Cluster 9.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.0",
+      "to": "MySQL Cluster 9.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.1",
+      "to": "MySQL Cluster 9.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.1",
+      "to": "MySQL Cluster 9.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.2",
+      "to": "MySQL Cluster 9.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.2",
+      "to": "MySQL Cluster 9.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.3",
+      "to": "MySQL Cluster 9.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.3",
+      "to": "MySQL Cluster 9.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.4",
+      "to": "MySQL Cluster 9.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.4",
+      "to": "MySQL Cluster 9.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.5",
+      "to": "MySQL Cluster 9.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.5",
+      "to": "MySQL Cluster 9.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.6",
+      "to": "MySQL Cluster 9.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.6",
+      "to": "MySQL Cluster 9.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.7",
+      "to": "MySQL Cluster 9.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 9.7",
+      "to": "MySQL Cluster 26.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 26.7",
+      "to": "MySQL Cluster 26.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MariaDB 5.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.1",
+      "to": "MariaDB 5.1",
+      "status": "contribution",
+      "notes": "XtraDB"
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MariaDB 5.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 5.1",
+      "to": "MariaDB 5.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.1",
+      "to": "MariaDB 5.2",
+      "status": "contribution",
+      "notes": "XtraDB"
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "MariaDB 5.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 5.2",
+      "to": "MariaDB 5.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.1",
+      "to": "MariaDB 5.3",
+      "status": "contribution",
+      "notes": "XtraDB"
+    },
+    {
+      "from": "MySQL 5.5",
+      "to": "MariaDB 5.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 5.3",
+      "to": "MariaDB 5.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.5",
+      "to": "MariaDB 5.5",
+      "status": "contribution",
+      "notes": "XtraDB"
+    },
+    {
+      "from": "MariaDB 5.5",
+      "to": "MariaDB 10.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.0",
+      "to": "MariaDB 10.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.6",
+      "to": "MariaDB 10.0",
+      "status": "contribution",
+      "notes": "XtraDB"
+    },
+    {
+      "from": "MariaDB 10.1",
+      "to": "MariaDB 10.2",
+      "status": "derived",
+      "notes": "InnoDB"
+    },
+    {
+      "from": "Percona Server 5.6",
+      "to": "MariaDB 10.1",
+      "status": "contribution",
+      "notes": "XtraDB"
+    },
+    {
+      "from": "MariaDB 10.2",
+      "to": "MariaDB 10.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.7",
+      "to": "MariaDB 10.2",
+      "status": "contribution",
+      "notes": "InnoDB"
+    },
+    {
+      "from": "MariaDB 10.3",
+      "to": "MariaDB 10.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.4",
+      "to": "MariaDB 10.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.5",
+      "to": "MariaDB 10.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.6",
+      "to": "MariaDB 10.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.7",
+      "to": "MariaDB 10.8",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.8",
+      "to": "MariaDB 10.9",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.9",
+      "to": "MariaDB 10.10",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.10",
+      "to": "MariaDB 10.11",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.11",
+      "to": "MariaDB 11.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.0",
+      "to": "MariaDB 11.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.1",
+      "to": "MariaDB 11.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.2",
+      "to": "MariaDB 11.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.3",
+      "to": "MariaDB 11.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.4",
+      "to": "MariaDB 11.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.5",
+      "to": "MariaDB 11.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.6",
+      "to": "MariaDB 11.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.7",
+      "to": "MariaDB 11.8",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 11.8",
+      "to": "MariaDB 12.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 12.0",
+      "to": "MariaDB 12.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 12.1",
+      "to": "MariaDB 12.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 12.2",
+      "to": "MariaDB 12.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 12.3",
+      "to": "MariaDB 13.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "InfiniDB 1.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 1.5",
+      "to": "InfiniDB 2.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 2.0",
+      "to": "InfiniDB 2.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 2.2",
+      "to": "InfiniDB 3.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 3.5",
+      "to": "InfiniDB 3.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 3.6",
+      "to": "InfiniDB 4.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 4.0",
+      "to": "InfiniDB 4.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "InfiniDB 4.5",
+      "to": "MariaDB ColumnStore 1.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.1",
+      "to": "MariaDB ColumnStore 1.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB ColumnStore 1.0",
+      "to": "MariaDB ColumnStore 1.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.2",
+      "to": "MariaDB ColumnStore 1.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB ColumnStore 1.1",
+      "to": "MariaDB ColumnStore 1.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 10.3",
+      "to": "MariaDB ColumnStore 1.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB ColumnStore 1.2",
+      "to": "MariaDB ColumnStore 1.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB ColumnStore 1.4",
+      "to": "MariaDB 10.5",
+      "status": "non-ga",
+      "notes": "Tentative"
+    },
+    {
+      "from": "MySQL 5.0",
+      "to": "Percona Server 5.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.1",
+      "to": "Percona Server 5.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.0",
+      "to": "Percona Server 5.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.5",
+      "to": "Percona Server 5.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.1",
+      "to": "Percona Server 5.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MariaDB 5.3",
+      "to": "Percona Server 5.5",
+      "status": "contribution",
+      "notes": "group commit"
+    },
+    {
+      "from": "MySQL 5.6",
+      "to": "Percona Server 5.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.5",
+      "to": "Percona Server 5.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.7",
+      "to": "Percona Server 5.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.6",
+      "to": "Percona Server 5.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.7",
+      "to": "Percona Server 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.0",
+      "to": "Percona Server 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.0",
+      "to": "Percona Server 8.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.1",
+      "to": "Percona Server 8.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.1",
+      "to": "Percona Server 8.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.2",
+      "to": "Percona Server 8.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.2",
+      "to": "Percona Server 8.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.3",
+      "to": "Percona Server 8.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.3",
+      "to": "Percona Server 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.4",
+      "to": "Percona Server 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.4",
+      "to": "Percona Server 9.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 9.7",
+      "to": "Percona Server 9.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 6.0",
+      "to": "Drizzle 7.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Drizzle 7.0",
+      "to": "Drizzle 7.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Drizzle 7.1",
+      "to": "Drizzle 7.2",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "RonDB 21.04",
+      "to": "RonDB 22.10",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "RonDB 22.10",
+      "to": "RonDB 24.10",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "RonDB 24.10",
+      "to": "RonDB 25.10",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "RonDB 25.10",
+      "to": "RonDB 26.02",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.0",
+      "to": "RonDB 21.04",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.0",
+      "to": "RonDB 22.10",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.4",
+      "to": "RonDB 24.10",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL Cluster 8.4",
+      "to": "RonDB 25.10",
+      "status": "non-ga",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.6",
+      "to": "WebScaleSQL",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.6",
+      "to": "Facebook MySQL 5.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.0",
+      "to": "Facebook MySQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Facebook MySQL 5.6",
+      "to": "WebScaleSQL",
+      "status": "contribution",
+      "notes": "Facebook contributed heavily to WebScaleSQL"
+    },
+    {
+      "from": "Facebook MySQL 5.6",
+      "to": "Facebook MySQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.6",
+      "to": "AliSQL 5.6",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 5.7",
+      "to": "AliSQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "AliSQL 5.6",
+      "to": "AliSQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.0",
+      "to": "GreatSQL 8.0",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 8.4",
+      "to": "GreatSQL 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "GreatSQL 8.0",
+      "to": "GreatSQL 8.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "Percona Server 5.7",
+      "to": "TenDB 5.7",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "MySQL 8.4",
+      "to": "VillageSQL 0.0.1",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "VillageSQL 0.0.1",
+      "to": "VillageSQL 0.0.2",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "VillageSQL 0.0.2",
+      "to": "VillageSQL 0.0.3",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "VillageSQL 0.0.3",
+      "to": "VillageSQL 0.0.4",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "VillageSQL 0.0.4",
+      "to": "VillageSQL 0.0.5",
+      "status": "derived",
+      "notes": ""
+    },
+    {
+      "from": "VillageSQL 0.0.5",
+      "to": "VillageSQL 0.0.6",
+      "status": "derived",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "name": "MySQL",
+    "description": "MySQL/Sun/Oracle MySQL",
+    "state": "",
+    "link": "https://en.wikipedia.org/wiki/MySQL",
+    "node": {
+      "color": "red",
+      "style": "",
+      "status": {
+        "Innovation": {
+          "color": "pink"
+        },
+        "Limited": {
+          "style": "dotted"
+        },
+        "Abandoned": {
+          "style": "dotted"
+        }
+      }
+    }
+  },
+  {
+    "name": "MySQL Cluster",
+    "description": "",
+    "state": "",
+    "link": "https://en.wikipedia.org/wiki/MySQL_Cluster",
+    "node": {
+      "color": "red3",
+      "style": "",
+      "status": {
+        "Innovation": {
+          "color": "pink"
+        }
+      }
+    }
+  },
+  {
+    "name": "MariaDB",
+    "description": "",
+    "state": "",
+    "link": "https://en.wikipedia.org/wiki/MariaDB",
+    "node": {
+      "color": "blue",
+      "style": "",
+      "status": {
+        "Rolling": {
+          "color": "lightblue"
+        }
+      }
+    }
+  },
+  {
+    "name": "InfiniDB",
+    "description": "",
+    "state": "",
+    "link": "https://en.wikipedia.org/wiki/InfiniDB",
+    "node": {
+      "color": "steelblue",
+      "style": "",
+      "status": {}
+    }
+  },
+  {
+    "name": "MariaDB ColumnStore",
+    "description": "",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "dodgerblue",
+      "style": "",
+      "status": {
+        "Enterprise": {
+          "style": "dotted"
+        }
+      }
+    }
+  },
+  {
+    "name": "Percona Server",
+    "description": "",
+    "state": "",
+    "link": "https://en.wikipedia.org/wiki/Percona_Server_for_MySQL",
+    "node": {
+      "color": "orange",
+      "style": "",
+      "status": {
+        "Innovation": {
+          "color": "orange3"
+        }
+      }
+    }
+  },
+  {
+    "name": "Drizzle",
+    "description": "",
+    "state": "",
+    "link": "https://en.wikipedia.org/wiki/Drizzle_(database_server)",
+    "node": {
+      "color": "blue4",
+      "style": "",
+      "status": {
+        "Development": {
+          "style": "dashed"
+        }
+      }
+    }
+  },
+  {
+    "name": "RonDB",
+    "description": "",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "#ffdf00",
+      "style": "",
+      "status": {
+        "Development": {
+          "style": "dashed"
+        }
+      }
+    }
+  },
+  {
+    "name": "WebScaleSQL",
+    "description": "",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "#330e50",
+      "style": "",
+      "status": {}
+    }
+  },
+  {
+    "name": "Facebook MySQL",
+    "description": "facebook/mysql-5.6 and facebook/mysql-8.0 branches",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "#3b5998",
+      "style": "",
+      "status": {}
+    }
+  },
+  {
+    "name": "AliSQL",
+    "description": "Alibaba's open-source MySQL fork (github.com/alibaba/AliSQL)",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "#ff6a00",
+      "style": "",
+      "status": {}
+    }
+  },
+  {
+    "name": "GreatSQL",
+    "description": "Fork of Percona Server 8.0, maintained by GreatOpenSource",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "darkgreen",
+      "style": "",
+      "status": {}
+    }
+  },
+  {
+    "name": "TenDB",
+    "description": "Tencent Game CROS DBA fork, data layer of TenDB Cluster, based on Percona Server 5.7.20",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "#006eff",
+      "style": "",
+      "status": {}
+    }
+  },
+  {
+    "name": "VillageSQL",
+    "description": "",
+    "state": "",
+    "link": "",
+    "node": {
+      "color": "#cc66ff",
+      "style": "",
+      "status": {}
+    }
+  }
+]
